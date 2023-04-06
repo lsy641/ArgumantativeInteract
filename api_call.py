@@ -1,6 +1,7 @@
 import os
 import openai
 import json
+import time
 openai.organization = "org-gcDzLqviJ8Ot15L4nFeIgR5L"
 openai.api_key = open("api_key", "r").read()
 
@@ -37,7 +38,7 @@ for c_id, conv in enumerate(convs):
             
         convs[c_id]["Conversation"][u_id]["Enhancing"] = choicel
         
-            
+        time.sleep(0.1)  
         last_command = {"role":"system", "content": f"Tell me the moral principle or the intrisic value what {prefix} is downplaying or opposing. Answer me with a phrase within 4 words."}
         response = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
                                                 messages=messages + [last_command], 
