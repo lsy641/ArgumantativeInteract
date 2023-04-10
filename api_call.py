@@ -5,19 +5,19 @@ import time
 openai.organization = "org-gcDzLqviJ8Ot15L4nFeIgR5L"
 openai.api_key = open("api_key", "r").read()
 
-#RawInputName = "vegan_immigration_data.json"
-AutoAnnatationOutputname = "vegan_immigration_annotation_wo_human_"
+RawInputName = "abortion_transgender_data.json"
+AutoAnnatationOutputname = "abortion_transgender_annotation_wo_human_"
 
 
 model="gpt-4"
 AutoAnnatationOutputname+=model
-RawInputName=AutoAnnatationOutputname+'.json'
+# RawInputName=AutoAnnatationOutputname+'.json'
 params = {'temperature':0.8, 'max_tokens':2048, 'n':5}
 initial_hint = "By looking through the below conversations where people are arguing on a controversial topic, you are able to infer the moral principle or the intrinsic value of each speaker according to what they say in each turn."
 
 with open(RawInputName, "r") as f:
    convs = json.load(f)
-   
+  
 for c_id, conv in enumerate(convs):
         messages = [{"role":"system", "content":initial_hint}]  
         text = ""
@@ -25,7 +25,7 @@ for c_id, conv in enumerate(convs):
             prefix = f'Speaker {utter["Speaker_id"]}-Utterance {utter["Utterance_id"]}'
             utterance = f'{prefix}: {utter["Content"]}\n'
             text += utterance
-
+            
         for u_id, utter in enumerate(conv["Conversation"]):
             try:
                 if ('Enhancing' not in utter) or ('Undercutting' not in utter):
