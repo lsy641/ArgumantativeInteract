@@ -5,52 +5,55 @@ import time
 openai.organization = "org-gcDzLqviJ8Ot15L4nFeIgR5L"
 openai.api_key = open("api_key", "r").read()
 
-RawInputName = "abortion_transgender_data.json"
-AutoAnnatationOutputname = "abortion_transgender_annotation_wo_human.json"
+#RawInputName = "vegan_immigration_data.json"
+AutoAnnatationOutputname = "vegan_immigration_annotation_wo_human_"
+
+
+model="gpt-3.5-turbo"
+AutoAnnatationOutputname+=model
+RawInputName=AutoAnnatationOutputname+'.json'
+params = {'temperature':0.8, 'max_tokens':2048, 'n':5}
+initial_hint = "By looking through the below conversations where people are arguing on a controversial topic, you are able to infer the moral principle or the intrinsic value of each speaker according to what they say in each turn."
 
 with open(RawInputName, "r") as f:
    convs = json.load(f)
    
-messages = [{"role":"system", "content":"By looking through the below conversations where people are argueing on a controversial topic, you are albe to infer the moral concern of each speaker according to what they say in each turn."}]
 for c_id, conv in enumerate(convs):
-    messages = [{"role":"system", "content":"By looking through below conversations where people are argueing on a controversial topic, you are albe to infer the moral concern of each speaker according to what they say in each turn."}]  
-    text = ""
-    for utter in conv["Conversation"]:
-        prefix = f'Speaker{utter["Speaker_id"]}-Utterance{utter["Utterance_id"]}'
-        utterance = f'{prefix}:{utter["Content"]}\n'
-        text += utterance 
-    messages.append({"role":"user", "content": text})
-    for u_id, utter in enumerate(conv["Conversation"]):
-        prefix = f'Speaker{utter["Speaker_id"]}-Utterance{utter["Utterance_id"]}'  
-        last_command = {"role":"system", "content": f"Tell me the moral principle or the intrisic value what {prefix} is promoting or supporting. Answer me with a phrase within 4 words."}
-        
-        response = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
-                                                messages=messages + [last_command], 
-                                                temperature=0.7, 
-                                                max_tokens=256,
-                                                top_p = 0.7,
-                                                n=5)
-        print(messages + [last_command])
-        choicel = []
-        for choice in response["choices"]:
-            print(choice["message"]["content"])
-            choicel.append(choice["message"]["content"])
-            
-        convs[c_id]["Conversation"][u_id]["Enhancing"] = choicel
-        
-        time.sleep(0.1)  
-        last_command = {"role":"system", "content": f"Tell me the moral principle or the intrisic value what {prefix} is downplaying or opposing. Answer me with a phrase within 4 words."}
-        response = openai.ChatCompletion.create(model="gpt-3.5-turbo", 
-                                                messages=messages + [last_command], 
-                                                temperature=0.7, 
-                                                max_tokens=256,
-                                                n=5)
-        print(messages + [last_command])
-        choicel = []
-        for choice in response["choices"]:
-            print(choice["message"]["content"])
-            choicel.append(choice["message"]["content"])
-        convs[c_id]["Conversation"][u_id]["Undercutting"] = choicel
-        
-with open(AutoAnnatationOutputname,"w") as f:
-   json.dump(convs, f, indent=1)
+        messages = [{"role":"system", "content":initial_hint}]  
+        text = ""
+        for utter in conv["Conversation"]:
+            prefix = f'Speaker {utter["Speaker_id"]}-Utterance {utter["Utterance_id"]}'
+            utterance = f'{prefix}: {utter["Content"]}\n'
+            text += utterance
+
+        for u_id, utter in enumerate(conv["Conversation"]):
+            try:
+                if ('Enhancing' not in utter) or ('Undercutting' not in utter):
+                    prefix = f'Speaker {utter["Speaker_id"]}-Utterance {utter["Utterance_id"]}'
+                    last_command = {"role":"user", "content": text + f"Infer the moral principle or the intrinsic value that {prefix} is supporting. Answer me with a phrase within 4 words."}
+                    
+                    response = openai.ChatCompletion.create(model=model, 
+                                                            messages=messages + [last_command], **params)
+                    # print(messages + [last_command])
+                    choicel = []
+                    for choice in response["choices"]:
+                        print(choice["message"]["content"])
+                        choicel.append(choice["message"]["content"])    
+                    convs[c_id]["Conversation"][u_id]["Enhancing"] = choicel
+                    
+                    time.sleep(1.0)  
+
+                    last_command = {"role":"user", "content": text + f"Infer the moral principle or the intrinsic value that {prefix} is opposing. Answer me with a phrase within 4 words."}
+                    response = openai.ChatCompletion.create(model=model, 
+                                                            messages=messages + [last_command], **params)
+                    # print(messages + [last_command])
+                    choicel = []
+                    for choice in response["choices"]:
+                        print(choice["message"]["content"])
+                        choicel.append(choice["message"]["content"])
+                    convs[c_id]["Conversation"][u_id]["Undercutting"] = choicel
+                
+                with open(AutoAnnatationOutputname+'.json',"w") as f:
+                    json.dump(convs, f, indent=1)
+            except:
+                print("Too long!",utter)
