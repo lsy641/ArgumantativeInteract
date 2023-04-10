@@ -9,7 +9,7 @@ openai.api_key = open("api_key", "r").read()
 AutoAnnatationOutputname = "vegan_immigration_annotation_wo_human_"
 
 
-model="gpt-3.5-turbo"
+model="gpt-4"
 AutoAnnatationOutputname+=model
 RawInputName=AutoAnnatationOutputname+'.json'
 params = {'temperature':0.8, 'max_tokens':2048, 'n':5}
@@ -30,10 +30,18 @@ for c_id, conv in enumerate(convs):
             try:
                 if ('Enhancing' not in utter) or ('Undercutting' not in utter):
                     prefix = f'Speaker {utter["Speaker_id"]}-Utterance {utter["Utterance_id"]}'
-                    last_command = {"role":"user", "content": text + f"Infer the moral principle or the intrinsic value that {prefix} is supporting. Answer me with a phrase within 4 words."}
+                    last_command = {"role":"user", "content": text + f"Infer the moral principle or the intrinsic value that {prefix} is supporting. If there isn't an answer, reply me NA. Answer me with a phrase within 4 words."}
                     
-                    response = openai.ChatCompletion.create(model=model, 
-                                                            messages=messages + [last_command], **params)
+                    while True:
+                        try:
+                            response = openai.ChatCompletion.create(model=model, 
+                                                                    messages=messages + [last_command], **params)
+                        except Exception as e:
+                            print(e)
+                        else:
+                            break
+                    
+
                     # print(messages + [last_command])
                     choicel = []
                     for choice in response["choices"]:
@@ -43,9 +51,16 @@ for c_id, conv in enumerate(convs):
                     
                     time.sleep(1.0)  
 
-                    last_command = {"role":"user", "content": text + f"Infer the moral principle or the intrinsic value that {prefix} is opposing. Answer me with a phrase within 4 words."}
-                    response = openai.ChatCompletion.create(model=model, 
-                                                            messages=messages + [last_command], **params)
+                    last_command = {"role":"user", "content": text + f"Infer the moral principle or the intrinsic value that {prefix} is opposing. If there isn't an answer, reply me NA. Answer me with a phrase within 4 words."}
+                    
+                    while True:
+                        try:
+                            response = openai.ChatCompletion.create(model=model, 
+                                                                    messages=messages + [last_command], **params)
+                        except Exception as e:
+                            print(e)
+                        else:
+                            break                    
                     # print(messages + [last_command])
                     choicel = []
                     for choice in response["choices"]:
