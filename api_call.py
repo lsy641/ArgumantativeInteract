@@ -5,17 +5,16 @@ import time
 openai.organization = "org-gcDzLqviJ8Ot15L4nFeIgR5L"
 openai.api_key = open("api_key", "r").read()
 
-RawInputName = "abortion_transgender_data.json"
-AutoAnnatationOutputname = "abortion_transgender_annotation_wo_human_"
+RawInputName = "vegan_immigration_"
+AutoAnnatationOutputname = RawInputName+"annotation_wo_human_"
 
 
-model="gpt-3.5-turbo" #or gpt-4
+model="gpt-4" #or gpt-4
 AutoAnnatationOutputname+=model
-# RawInputName=AutoAnnatationOutputname+'.json'
 params = {'temperature':1.0, 'max_tokens':2048, 'n':5}
 initial_hint = "By looking through the below conversations where people are arguing on a controversial topic, you are able to infer the moral principle or the intrinsic value of each speaker according to what they say in each turn."
 
-with open(RawInputName, "r") as f:
+with open(RawInputName+'data.json', "r") as f:
    convs = json.load(f)
   
 for c_id, conv in enumerate(convs):
@@ -30,7 +29,7 @@ for c_id, conv in enumerate(convs):
             try:
                 if ('Enhancing' not in utter) or ('Undercutting' not in utter):
                     prefix = f'Speaker {utter["Speaker_id"]}-Utterance {utter["Utterance_id"]}'
-                    last_command = {"role":"user", "content": text + f"Is the {prefix} supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that {prefix} is supporting or enhancing or phraising. Answer me with a phrase within 4 words"}
+                    last_command = {"role":"user", "content": text + f"Is the {prefix} supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that {prefix} is supporting or enhancing or praising. Answer me with a phrase within 4 words."}
                     
                     while True:
                         try:
@@ -64,7 +63,8 @@ for c_id, conv in enumerate(convs):
                                                                     messages=messages + [last_command], **params)
                         except Exception as e:
                             print(messages)
-                            print(e)                           
+                            print(e)               
+                            time.sleep(1.0)        
                         else:
                             break                    
                     # print(messages + [last_command])
