@@ -12,7 +12,7 @@ AutoAnnatationOutputname = "abortion_transgender_annotation_wo_human_"
 model="gpt-4"
 AutoAnnatationOutputname+=model
 # RawInputName=AutoAnnatationOutputname+'.json'
-params = {'temperature':0.8, 'max_tokens':2048, 'n':5}
+params = {'temperature':0.7, 'max_tokens':2048, 'n':5}
 initial_hint = "By looking through the below conversations where people are arguing on a controversial topic, you are able to infer the moral principle or the intrinsic value of each speaker according to what they say in each turn."
 
 with open(RawInputName, "r") as f:
@@ -30,7 +30,7 @@ for c_id, conv in enumerate(convs):
             try:
                 if ('Enhancing' not in utter) or ('Undercutting' not in utter):
                     prefix = f'Speaker {utter["Speaker_id"]}-Utterance {utter["Utterance_id"]}'
-                    last_command = {"role":"user", "content": text + f"Infer the moral principle or the intrinsic value that {prefix} is supporting or enhancing or phraising. If there isn't an answer, reply me NA. Answer me with a phrase within 4 words."}
+                    last_command = {"role":"user", "content": text + f"Is the {prefix} supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that {prefix} is supporting or enhancing or phraising. Answer me with a phrase within 4 words"}
                     
                     while True:
                         try:
@@ -50,8 +50,12 @@ for c_id, conv in enumerate(convs):
                     convs[c_id]["Conversation"][u_id]["Enhancing"] = choicel
                     
                     time.sleep(1.0)  
+                    
+                    messages.append(last_command)   
+                    last_command = {"role": "assistant", "content": f'{choicel[0]}'}
+                    messages.append(last_command) 
 
-                    last_command = {"role":"user", "content": text + f"Infer the moral principle or the intrinsic value that {prefix} is opposing or undercutting or criticizing. If there isn't an answer, reply me NA. Answer me with a phrase within 4 words."}
+                    last_command = {"role":"user", "content": text + f"Is the {prefix} against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that {prefix} is opposing or undercutting or attacking. Answer me with a phrase within 4 words."}
                     
                     while True:
                         try:
@@ -70,5 +74,7 @@ for c_id, conv in enumerate(convs):
                 
                 with open(AutoAnnatationOutputname+'.json',"w") as f:
                     json.dump(convs, f, indent=1)
+                # break
             except:
                 print("Too long!",utter)
+        # break
