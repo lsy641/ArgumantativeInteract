@@ -9,10 +9,10 @@ RawInputName = "abortion_transgender_data.json"
 AutoAnnatationOutputname = "abortion_transgender_annotation_wo_human_"
 
 
-model="gpt-4"
+model="gpt-3.5-turbo" #or gpt-4
 AutoAnnatationOutputname+=model
 # RawInputName=AutoAnnatationOutputname+'.json'
-params = {'temperature':0.7, 'max_tokens':2048, 'n':5}
+params = {'temperature':1.0, 'max_tokens':2048, 'n':5}
 initial_hint = "By looking through the below conversations where people are arguing on a controversial topic, you are able to infer the moral principle or the intrinsic value of each speaker according to what they say in each turn."
 
 with open(RawInputName, "r") as f:
@@ -37,6 +37,7 @@ for c_id, conv in enumerate(convs):
                             response = openai.ChatCompletion.create(model=model, 
                                                                     messages=messages + [last_command], **params)
                         except Exception as e:
+                            print(messages)
                             print(e)
                         else:
                             break
@@ -51,9 +52,9 @@ for c_id, conv in enumerate(convs):
                     
                     time.sleep(1.0)  
                     
-                    messages.append(last_command)   
-                    last_command = {"role": "assistant", "content": f'{choicel[0]}'}
-                    messages.append(last_command) 
+                    # messages.append(last_command)   
+                    # last_command = {"role": "assistant", "content": f'{choicel[0]}'}
+                    # messages.append(last_command) 
 
                     last_command = {"role":"user", "content": text + f"Is the {prefix} against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that {prefix} is opposing or undercutting or attacking. Answer me with a phrase within 4 words."}
                     
@@ -62,7 +63,8 @@ for c_id, conv in enumerate(convs):
                             response = openai.ChatCompletion.create(model=model, 
                                                                     messages=messages + [last_command], **params)
                         except Exception as e:
-                            print(e)
+                            print(messages)
+                            print(e)                           
                         else:
                             break                    
                     # print(messages + [last_command])
