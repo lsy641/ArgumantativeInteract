@@ -5,16 +5,21 @@ import time
 openai.organization = "org-gcDzLqviJ8Ot15L4nFeIgR5L"
 openai.api_key = open("api_key", "r").read()
 
-model="gpt-4" #or gpt-3.5
-params = {'temperature':1.0, 'max_tokens':2048, 'n':5}
+model="gpt-4" #or gpt-3.5-turbo
+params = {'temperature':1.0, 'max_tokens':2048, 'n':1}
+initial_hint = "You are able to judge if two phrases, which can be moral principles, intrinsic values, or moral concerns, are semantically equivalent to each other related to a specific topic."
 
 def detect_conflict(file_name):
     # Open the JSON file
     with open(file_name) as f:
         data = json.load(f)
+    messages = [{"role":"system", "content":initial_hint}]  
 
     # Iterate over each object in the list
     i = 1
+    total_conflicts = 0
+    symbolic_count= 0
+    semantic_count = 0
     for conv in data:
         # Iterate over each conversation in the list
         # check the conflict in the given conversation obj
@@ -22,15 +27,25 @@ def detect_conflict(file_name):
         print("Topic: ", conv["Topic"])
         print("Speaker count: ", conv["Speaker_count"])
         print("----ground truth check result:")
-        ground_truth(conv)
+        gt_conflicts = ground_truth(conv)
         print("----symbolic check result:")
-        symbolic_check(conv)
+        symbolic_conflicts = symbolic_check(conv)
+        print("----semantic check result:")
+        semantic_conflicts = semantic_check(conv, messages)
+        
+        # calculate the accuracy
+        total_conflicts += len(gt_conflicts)
+        symbolic_count += len([u for u in symbolic_conflicts if u in gt_conflicts])
+        semantic_count += len([u for u in semantic_conflicts if u in gt_conflicts])
+        print(f"----symbolic check accuracy: {float(symbolic_count) / float(total_conflicts)}")
+        print(f"----semantic check accuracy: {float(semantic_count) / float(total_conflicts)}")
         i += 1
                    
 def ground_truth(conv):
     enhancing_dict = {}
     undercutting_dict = {}
     utters = []
+    rlt = []
     for utter1 in conv["Conversation"]:
         utter1_id = utter1["Utterance_id"]
         speaker1_id = utter1["Speaker_id"]
@@ -59,33 +74,92 @@ def ground_truth(conv):
                 print(f"Conflict between utterance {utter1_id} and {utter2_id}, speaker {speaker1_id} and {speaker2_id}")
                 print("Conflict value: ", set(conflict_values))
                 print()
+                rlt.append((utter1_id, utter2_id))
+    return rlt
 
 def symbolic_check(conv):
     enhancing_dict = {}
     undercutting_dict = {}
     utters = []
+    rlt = []
     for utter1 in conv["Conversation"]:
         utter1_id = utter1["Utterance_id"]
         speaker1_id = utter1["Speaker_id"]
-        utter1_enhancing = utter1["Enhancing"]  
-        utter1_undercutting = utter1["Undercutting"]
+        utter1_enhancing = max(utter1["Enhancing"], key=utter1["Enhancing"].count)
+        utter1_undercutting = max(utter1["Undercutting"], key=utter1["Undercutting"].count)
         
         for utter2 in conv["Conversation"]:
             utter2_id = utter2["Utterance_id"]
             speaker2_id = utter2["Speaker_id"]
             if utter1_id == utter2_id or speaker1_id == speaker2_id:
                 continue
-            utter2_enhancing = utter2["Enhancing"]
-            utter2_undercutting = utter2["Undercutting"]
-            # check if the two utterance conflict with each other
-            conflict_values = [v for v in utter1_enhancing if v in utter2_undercutting and v != "NA"]
-            if conflict_values != []:
+            utter2_enhancing = max(utter2["Enhancing"], key=utter2["Enhancing"].count)
+            utter2_undercutting = max(utter2["Undercutting"], key=utter2["Undercutting"].count)
+            # check if the two utterance conflict with each other with simple symbolic check
+            conflict = utter1_enhancing == utter2_undercutting and (utter1_enhancing != "NA" or utter2_undercutting != "NA")
+            if conflict:
                 print("Conflict found!")
                 print(f"Conflict between utterance {utter1_id} and {utter2_id}, speaker {speaker1_id} and {speaker2_id}")
-                print("Conflict value: ", set(conflict_values))
+                print(f"Reason: enhancing \"{utter1_enhancing}\" vs. undercutting \"{utter2_undercutting}\"")
                 print("Conflict detector type: Symbolic")
                 print()
+                rlt.append((utter1_id, utter2_id))
+    return rlt                
                 
+def semantic_check(conv, messages):
+    enhancing_dict = {}
+    undercutting_dict = {}
+    utters = []
+    rlt = []
+    topic = conv["Topic"]
+    for utter1 in conv["Conversation"]:
+        utter1_id = utter1["Utterance_id"]
+        speaker1_id = utter1["Speaker_id"]
+        utter1_enhancing = max(utter1["Enhancing"], key=utter1["Enhancing"].count)
+        utter1_undercutting = max(utter1["Undercutting"], key=utter1["Undercutting"].count)
+        
+        for utter2 in conv["Conversation"]:
+            utter2_id = utter2["Utterance_id"]
+            speaker2_id = utter2["Speaker_id"]
+            if utter1_id == utter2_id or speaker1_id == speaker2_id:
+                continue
+            utter2_enhancing = max(utter2["Enhancing"], key=utter2["Enhancing"].count)
+            utter2_undercutting = max(utter2["Undercutting"], key=utter2["Undercutting"].count)
+            if utter1_enhancing == "NA" or utter2_undercutting == "NA":
+                continue
+            # check if the two utterance conflict with each other with semantic equivalence
+            last_command = {"role":"user", "content": f"Is \"{utter1_enhancing}\" and \"{utter2_undercutting}\" semantically equivalent under the topic of \"{topic}\"? Answer me Yes or No."}
+            semantic_equiv = False
+            while True:
+                try:
+                    # print("sending message...")
+                    response = openai.ChatCompletion.create(model=model, 
+                                                            messages=messages + [last_command], **params)
+                    # print("response: ", response)
+                    # print("message sent!")
+                    for choice in response["choices"]:
+                        # print(choice["message"]["content"])
+                        if choice["message"]["content"] == "Yes":
+                            semantic_equiv = True
+                            break
+                except Exception as e:
+                    print(messages)
+                    print(e)
+                    time.sleep(1.0)  
+                else:
+                    break
+                
+            # time.sleep(1.0) 
+                
+            if semantic_equiv:
+                print("Conflict found!")
+                print(f"Conflict between utterance {utter1_id} and {utter2_id}, speaker {speaker1_id} and {speaker2_id}")
+                print(f"Reason: enhancing \"{utter1_enhancing}\" vs. undercutting \"{utter2_undercutting}\"")
+                print("Conflict detector type: Semantic")
+                print()
+                rlt.append((utter1_id, utter2_id))
+    return rlt  
+              
 # def symbolic_check(conv):
 #     enhancing_dict = {}
 #     undercutting_dict = {}
