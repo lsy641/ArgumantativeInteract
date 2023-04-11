@@ -20,12 +20,18 @@
      "Gun-free zones",
      "Safety through regulation",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Self-defense protection", "Protecting vulnerable targets", "Protection of others"], "Undercutting": ["Safety through regulation"]}
+    }
+        
    },
    {
     "Speaker_id": 2,
     "Utterance_id": 2,
-    "Content": "we know what happened at uvaldo there were hundreds of good guys with guns and none of them had the guts to go and think about it and 20 kids got killed so it's not a given that actually if you have a load of people who are good people with guns in these schools it makes any difference we saw what happened on the video here about what this person did but on a wider point I I tweeted today for example look rather than get into the same old debates what about uh regulating guns in America as in the same way you regulate cars and I got an unbelievable amount of abuse immediately just endless abuse as if I didn't know what I was talking about but when I actually then posted a piece by Nick Kristoff who was at the New York Times at the time and I explained what I meant and I'm just going to pre-see what the piece was a brilliant piece it was a few years ago but he said if we had the same Auto fatality rate today that we had in 1921 by my calculations we'd have we'd have 715 000 Americans dying annually in vehicle accidents instead we've reduced that fatality rate by 95 percent not by confiscating cars or taking them away but by regulating them and their drivers more sensibly and then he goes into all the things that have happened in that period right they talked about requiring driver licenses uh putting speed limits registering Vehicles all of that was originally met with ridicule when authorities in New York City saw in 1899 to ban Horseless carriages in the Parks the idea was lambasted as devoid of Merit and impossible to maintain by the New York Times yeah over time as more and more people were being killed by cars they brought in more and more regulation by the 1920s a lot of this stuff like car registration license requirements other safety measures and then over time seat belts airbags padded dashboards better bumpers rules about drunken drivers graduated licensing the young people improved Road engineering blah blah blah the upshot of all that was that there's now just over one car fatality per 100 million miles driven and so it was a very well argued point and at the center of it was not a claim which I know goes down very badly with gun owners in America that you want to ban guns or grab guns I'm always going to gun Grabber. I don't want your guns, trust me. But about making it as safe as cars, why not just do that and see what happens.",
+    "Content": "we know what happened at uvaldo there were hundreds of good guys with guns and none of them had the guts to go and think about it and 20 kids got killed so it's not a given that actually if you have a load of people who are good people with guns in these schools it makes any difference we saw what happened on the video here about what this person did but on a wider point I I tweeted today for example look rather than get into the same old debates what about uh regulating guns in America as in the same way you regulate cars and I got an unbelievable amount of abuse immediately just endless abuse as if I didn't know what I was talking about but when I actually then posted a piece by Nick Kristoff who was at the New York Times at the time and I explained what I meant and I'm just going to pre-see what the piece was a brilliant piece it was a few years ago but he said if we had the same Auto fatality rate today that we had in 1921 by my calculations we'd have we'd have 715 000 Americans dying annually in vehicle accidents instead we've reduced that fatality rate by 95 percent not by confiscating cars or taking them away but by regulating them and their drivers more sensibly and then he goes into all the things that have happened in that period right they talked about requiring driver licenses uh putting speed limits registering Vehicles all of that was originally met with ridicule when authorities in New York City saw in 1899 to ban Horseless carriages in the Parks the idea was lambasted as devoid of Merit and impossible to maintain by the New York Times yeah over time as more and more people were being killed by cars they brought in more and more regulation by the 1920s a lot of this stuff like car registration license requirements other safety measures and then over time seat belts airbags padded dashboards better bumpers rules about drunken drivers graduated licensing the young people improved Road engineering blah blah blah the upshot of all that was that there's now just over one car fatality per 100 million miles driven and so it was a very well argued point and at the center of it was not a claim which I know goes down very badly with gun owners in America that you want to ban guns or grab guns I'm always going to gun Grabber. trust me. But about making it as safe as cars, why not just do that and see what happens.",
     "Enhancing": [
      "Safety through regulation",
      "Safety through regulation",
@@ -39,7 +45,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Safety through regulation"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 1,
@@ -58,7 +69,13 @@
      "Mental health treatment",
      "Mental health importance",
      "Mental health focus"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Self-defense rights", "Individual firearm rights"], "Undercutting": ["NA"]}
+    }
+    
    },
    {
     "Speaker_id": 2,
@@ -77,7 +94,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Public safety"], "Undercutting": ["NA"]}
+    }
    }
   ]
  },
@@ -102,7 +124,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -121,7 +148,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Supporting police adaptation", "Adaptation and progress"], "Undercutting": ["Police hatred"]}
+    }
    },
    {
     "Speaker_id": 3,
@@ -140,7 +172,12 @@
      "Transparency and trust",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Transparency and accountability"], "Undercutting": ["Police armament"]}
+    }
    },
    {
     "Speaker_id": 4,
@@ -159,7 +196,12 @@
      "Lack of accountability",
      "Lack of accountability",
      "Lack of oversight"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Accountability and Oversight"], "Undercutting": ["Police right abusement"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -178,7 +220,12 @@
      "Transparency and accountability",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Defending police oversight", "Trust in police", "Trust in authorities"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 3,
@@ -197,7 +244,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Transparency and accountability"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -216,7 +268,12 @@
      "Transparency and accountability",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 3,
@@ -235,7 +292,12 @@
      "Transparency and oversight",
      "Transparency and accountability",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Transparency and accountability"], "Undercutting": ["Trust in police oversight", "Trust in police"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -254,7 +316,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Defense police integrity", "Defense of police", "Trust in police"], "Undercutting": ["NA"]}
+    }
    }
   ]
  },
@@ -279,7 +346,12 @@
      "Individual disarmament",
      "Gun control",
      "Gun control"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Right to bear arms", "Individual's right to self-defense", "Right to bear arms"], "Undercutting": ["Against gun control", "Gun control", "Individual disarmament"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -298,7 +370,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 1,
@@ -317,7 +394,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Individual gun rights", "Self-defense rights", "Right to bear arms"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -336,7 +418,12 @@
      "NA",
      "NA",
      "Calm and respectful communication"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 1,
@@ -355,7 +442,12 @@
      "Mental health treatment",
      "Mental health treatment",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing":["NA"], "Undercutting":["Drug legalization"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -374,7 +466,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing":["Safety and gun control"], "Undercutting":["Gun ownership culture", "Individual gun rights"]}
+    }
    },
    {
     "Speaker_id": 1,
@@ -393,7 +490,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[""]},
+        "A2":{},
+        "A3":{"Enhancing": ["Self-defense rights"], "Undercutting": ["Gun control"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -412,7 +514,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing":["Safety and gun control"], "Undercutting":["Gun ownership culture", "Individual gun rights"]}
+    }
    },
    {
     "Speaker_id": 1,
@@ -431,7 +538,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Self-defense rights", "Individual gun rights"], "Undercutting": ["Gun control"]}
+    }
    }
   ]
  },
@@ -456,7 +568,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Self-defense rights"], "Undercutting": ["Gun control"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -475,7 +592,12 @@
      "Gun ownership culture",
      "Gun ownership rights",
      "Gun ownership culture"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Safety over weapons", "Reducing gun violence"], "Undercutting": ["Gun ownership culture", "Individual gun rights", "Gun ownership rights"]}
+    }
    },
    {
     "Speaker_id": 3,
@@ -494,7 +616,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Safety through regulation", "Regulating weapon availability"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 4,
@@ -513,7 +640,12 @@
      "Public safety concerns",
      "Personal safety priority",
      "Safety of citizens"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Self-defense rights", "Right to self-defense"], "Undercutting": ["Safety over weapons", "Safety and gun control"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -532,12 +664,17 @@
      "Personal self-defense",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["Self-defense capabilities", "Personal self-defense"]}
+    }
    },
    {
     "Speaker_id": 4,
     "Utterance_id": 6,
-    "Content": "like that is to get out the house and you want to have a shootout with two people AR-15s and your children at home",
+    "Content": "I just want to state that I was reaching around a piece",
     "Enhancing": [
      "NA",
      "NA",
@@ -551,7 +688,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -570,7 +712,12 @@
      "Personal safety priority",
      "Personal self-defense",
      "Safety of children"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["Personal safety capabilities", "Personal self-defense"]}
+    }
    },
    {
     "Speaker_id": 4,
@@ -589,7 +736,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -608,7 +760,12 @@
      "Self-defense rights",
      "Self-defense rights",
      "Self-defense rights"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["Self-defense capabilities"]}
+    }
    }
   ]
  },
@@ -633,7 +790,12 @@
      "Personal safety importance",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Self-defense rights", "Self-defense protection"], "Undercutting": ["Semi-automatic guns restriction"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -652,7 +814,12 @@
      "NA",
      "Easier gun access",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Public safety concern", "Public safety"], "Undercutting": ["NA", "Easier gun access"]}
+    }
    },
    {
     "Speaker_id": 1,
@@ -671,7 +838,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["NA"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 2,
@@ -690,7 +862,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Public safety concern", "Public safety"], "Undercutting": ["NA"]}
+    }
    },
    {
     "Speaker_id": 1,
@@ -709,7 +886,12 @@
      "NA",
      "NA",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Individual rights protection", "Individual gun rights"], "Undercutting": ["Easy gun access"]}
+    }
    },
    {
     "Speaker_id": 3,
@@ -728,7 +910,12 @@
      "Gun control opposition",
      "Safety of firearms",
      "NA"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Public safety concern", "Public safety", "Easy gun access"], "Undercutting": ["Safety through beckground checks", "background check capability"]}
+    }
    },
    {
     "Speaker_id": 1,
@@ -747,7 +934,12 @@
      "Safety over accessibility",
      "Safety from weapons",
      "Safety through regulation"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Self-defense rights", "Individuals' right to self-defense", "Individual self-defense"], "Undercutting": ["Safety over accessibility control"]}
+    }
    },
    {
     "Speaker_id": 3,
@@ -766,7 +958,12 @@
      "Public safety protection",
      "Speaker 3-Utterance 8 is opposing \"unrestricted gun access.\"",
      "Public safety priority"
-    ]
+    ],
+    "Annotation_eval": {
+        "A1": {"Enhancing": [], "Undercutting":[]},
+        "A2":{},
+        "A3":{"Enhancing": ["Public safety concern", "Public safety", "Public safety promotion"], "Undercutting": ["Individual gun rights"]}
+    }
    }
   ]
  }
