@@ -1,0 +1,59 @@
+====Evaluating benchmark:  gun_violence_annotation_gpt-4.json
+=======Checking conflict in conversation_id:  1
+Topic:  Gun Violence
+Speaker count:  2
+----ground truth check result:
+Conflict found!
+Conflict between utterance 2 and 1, speaker 2 and 1
+Conflict value:  {'Safety through regulation'}
+
+----semantic check result:
+----semantic check accuracy: 0.0
+total_conflicts, semantic_count, correct_count:  1 0 0
+=======Checking conflict in conversation_id:  2
+Topic:  Gun Violence
+Speaker count:  4
+----ground truth check result:
+Conflict found!
+Conflict between utterance 5 and 8, speaker 2 and 3
+Conflict value:  {'Trust in police'}
+
+Conflict found!
+Conflict between utterance 7 and 8, speaker 2 and 3
+Conflict value:  {'Trust in police'}
+
+----semantic check result:
+----semantic check accuracy: 0.0
+total_conflicts, semantic_count, correct_count:  3 0 0
+=======Checking conflict in conversation_id:  3
+Topic:  Gun Violence
+Speaker count:  2
+----ground truth check result:
+Conflict found!
+Conflict between utterance 3 and 6, speaker 1 and 2
+Conflict value:  {'Individual gun rights'}
+
+Conflict found!
+Conflict between utterance 3 and 8, speaker 1 and 2
+Conflict value:  {'Individual gun rights'}
+
+Conflict found!
+Conflict between utterance 9 and 6, speaker 1 and 2
+Conflict value:  {'Individual gun rights'}
+
+Conflict found!
+Conflict between utterance 9 and 8, speaker 1 and 2
+Conflict value:  {'Individual gun rights'}
+
+----semantic check result:
+----semantic check accuracy: 0.0
+total_conflicts, semantic_count, correct_count:  7 0 0
+=======Checking conflict in conversation_id:  4
+Topic:  Gun Violence
+Speaker count:  4
+----ground truth check result:
+Conflict found!
+Conflict between utterance 2 and 4, speaker 2 and 4
+Conflict value:  {'Safety over weapons'}
+
+----semantic check result:
