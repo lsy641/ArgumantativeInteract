@@ -5,7 +5,7 @@ import time
 openai.organization = "org-gcDzLqviJ8Ot15L4nFeIgR5L"
 openai.api_key = open("api_key", "r").read()
 
-model="gpt-4" #or gpt-3.5-turbo
+model="gpt-3.5-turbo" #or gpt-3.5-turbo
 params = {'temperature':1.0, 'max_tokens':2048, 'n':1}
 initial_hint = "You are able to judge if two phrases, which can be moral principles, intrinsic values, or moral concerns, are semantically equivalent to each other related to a specific topic."
 
@@ -20,6 +20,7 @@ def detect_conflict(file_name):
     total_conflicts = 0
     symbolic_count= 0
     semantic_count = 0
+    correct_count = 0
     for conv in data:
         # Iterate over each conversation in the list
         # check the conflict in the given conversation obj
@@ -28,18 +29,20 @@ def detect_conflict(file_name):
         print("Speaker count: ", conv["Speaker_count"])
         print("----ground truth check result:")
         gt_conflicts = ground_truth(conv)
-        print("----symbolic check result:")
-        symbolic_conflicts = symbolic_check(conv)
+        # print("----symbolic check result:")
+        # symbolic_conflicts = symbolic_check(conv)
         print("----semantic check result:")
         semantic_conflicts = semantic_check(conv, messages)
-        
+        semantic_count += len(semantic_conflicts)
         # calculate the accuracy
         total_conflicts += len(gt_conflicts)
-        symbolic_count += len([u for u in symbolic_conflicts if u in gt_conflicts])
-        semantic_count += len([u for u in semantic_conflicts if u in gt_conflicts])
-        print(f"----symbolic check accuracy: {float(symbolic_count) / float(total_conflicts)}")
+        # symbolic_count += len([u for u in symbolic_conflicts if u in gt_conflicts])
+        correct_count += len([u for u in semantic_conflicts if u in gt_conflicts])
+        # print(f"----symbolic check accuracy: {float(symbolic_count) / float(total_conflicts)}")
         print(f"----semantic check accuracy: {float(semantic_count) / float(total_conflicts)}")
         i += 1
+        print("total_conflicts, semantic_count, correct_count: ", total_conflicts, semantic_count, correct_count)
+    return total_conflicts, semantic_count, correct_count
                    
 def ground_truth(conv):
     enhancing_dict = {}
@@ -53,6 +56,8 @@ def ground_truth(conv):
         utter1_undercutting = []
         for person in utter1["Annotation_eval"]:
             assess1 = utter1["Annotation_eval"][person]
+            if assess1 == {}:
+                continue
             utter1_enhancing += [v for v in assess1["Enhancing"] if v != "NA"]
             utter1_undercutting += [v for v in assess1["Undercutting"] if v != "NA"]
         
@@ -65,6 +70,8 @@ def ground_truth(conv):
             utter2_undercutting = []
             for person in utter2["Annotation_eval"]:
                 assess2 = utter2["Annotation_eval"][person]
+                if assess2 == {}:
+                    continue
                 utter2_enhancing += [v for v in assess2["Enhancing"] if v != "NA"]
                 utter2_undercutting += [v for v in assess2["Undercutting"] if v != "NA"]
             # check if the two utterance conflict with each other
@@ -132,7 +139,7 @@ def semantic_check(conv, messages):
             semantic_equiv = False
             while True:
                 try:
-                    # print("sending message...")
+                    print("sending message...")
                     response = openai.ChatCompletion.create(model=model, 
                                                             messages=messages + [last_command], **params)
                     # print("response: ", response)
@@ -197,6 +204,26 @@ def semantic_check(conv, messages):
 #                 print()
      
 if __name__ == "__main__":
-    benchmark_set = []
+    # benchmark_set = ["gun_violence_annotation_gpt-4.json", "vegan_immigration_annotation_gpt-4.json"]
+    benchmark_set = ["vegan_immigration_annotation_gpt-4.json"]
     input_file = "gun_violence_annotation_gpt-4.json"
-    detect_conflict(input_file)
+    statistics = {}
+    
+    conflict_count = 0
+    detected_count= 0
+    correct_count = 0
+    for benchmark in benchmark_set:
+        print("====Evaluating benchmark: ", benchmark)
+        conflict_cnt, detected_cnt, correct_cnt = detect_conflict(benchmark)
+        conflict_count += conflict_cnt
+        detected_count += detected_cnt
+        correct_count += correct_cnt
+        statistics[benchmark] = (conflict_cnt, detected_cnt, correct_cnt, float(correct_cnt) / float(conflict_cnt))
+    
+    print(f"total conflict count: {conflict_count}")
+    print(f"total detected count: {detected_count}")
+    print(f"total correct count: {correct_count}")
+    print(f"----prediction accuracy: {float(correct_count) / float(conflict_count)}")
+    print(f"statistics: {statistics}")
+    
+    # detect_conflict(input_file)
