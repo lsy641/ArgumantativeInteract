@@ -4,6 +4,7 @@ import json
 TopicName = "gun_violence_"
 InputFileName = "annotation_"
 OutputFileName= "annotation_"
+YouName = "A1"
 Model = "gpt-4"
 with open(TopicName+OutputFileName +Model+".json", "r") as f:
     convs = json.load(f)
@@ -47,7 +48,7 @@ for c_id, conv in enumerate(convs):
             undercut.extend(added_undercut)
         if "Annotation_eval" not in convs[c_id]["Conversation"][u_id]:
             convs[c_id]["Conversation"][u_id]["Annotation_eval"] = {}
-        convs[c_id]["Conversation"][u_id]["Annotation_eval"]["A1"] = {"Enhancing": enhance, "Undercutting": undercut}
+        convs[c_id]["Conversation"][u_id]["Annotation_eval"][YouName] = {"Enhancing": enhance, "Undercutting": undercut}
         
         with open(TopicName+OutputFileName +Model+".json", "w" ) as f:
             json.dump(convs, f, indent=1)    
