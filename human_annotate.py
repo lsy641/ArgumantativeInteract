@@ -3,7 +3,7 @@ import json
 
 TopicName = "gun_violence_"
 InputFileName = "annotation_"
-OutputFileName= "annotation_"
+OutputFileName= "add_annotation_"
 YouName = "A1"
 Model = "gpt-4"
 with open(TopicName+OutputFileName +Model+".json", "r") as f:
@@ -19,7 +19,7 @@ for c_id, conv in enumerate(convs):
     print(text)
     print("----------------------------")
     for u_id, utter in enumerate(conv["Conversation"]):
-        if "Annotation_eval" in convs[c_id]["Conversation"][u_id] and "A1" in convs[c_id]["Conversation"][u_id]["Annotation_eval"] and convs[c_id]["Conversation"][u_id]["Annotation_eval"]["A1"]["Enhancing"] and convs[c_id]["Conversation"][u_id]["Annotation_eval"]["A1"]["Undercutting"]:
+        if "Annotation_eval" in convs[c_id]["Conversation"][u_id] and YouName in convs[c_id]["Conversation"][u_id]["Annotation_eval"] and convs[c_id]["Conversation"][u_id]["Annotation_eval"][YouName]["Enhancing"] and convs[c_id]["Conversation"][u_id]["Annotation_eval"][YouName]["Undercutting"]:
             continue
         prefix = f'Speaker {utter["Speaker_id"]}-Utterance {utter["Utterance_id"]}'
         utterance = f'{prefix}: {utter["Content"]}\n'
