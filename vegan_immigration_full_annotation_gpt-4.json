@@ -1,0 +1,3518 @@
+[
+ {
+  "Topic": "Vegan",
+  "Data_id": 0,
+  "Speaker_count": 2,
+  "Conversation": [
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 0,
+    "Content": "Why would chucking paint all over big ben persuade someone like me to give up meat?",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "Respecting public property",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Respecting public property",
+       "Disruptive protest methods"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Respecting public property"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 1,
+    "Content": "As you and your viewers probably know we are in a climate an ecological emergency at the moment and so what we are doing is we're asking the government to support farmers and fishing communities in a transition to a plant-based food system because we know that animal agriculture is a leading cause of the climate crisis and so if we transition to a plant-based food system we can free up vast amount of land in the UK.",
+    "Enhancing": [
+     "Environmental protection",
+     "Environmental protection",
+     "Environmental protection",
+     "Environmental protection",
+     "Environmental protection"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Environmental protection"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Environmental protection"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Environmental protection"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 2,
+    "Content": "Okay look that's all fine, that wasn't my question. My question is why does chucking paint over big ben? Why does desecrating Trafalgar square with red dye, chucking milk around harrods, destroying supermarket shells? How does that persuade me who already likes eating meat? Why are you going to persuade me by being a vandal? Don't get it.",
+    "Enhancing": [
+     "Respect for property",
+     "Respect for property",
+     "Respect for property",
+     "Respecting public property",
+     "Respect for property"
+    ],
+    "Undercutting": [
+     "Respect for property",
+     "Respect for monuments",
+     "Respect for property",
+     "Respecting public property",
+     "Respecting public property"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Respect for property",
+       "Respecting public property"
+      ],
+      "Undercutting": [
+       "Vandalism for persuasion"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Respect for property",
+       "Respecting public property"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Respect for property",
+       "Respecting public property"
+      ],
+      "Undercutting": [
+       "Improper way of protesting"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 3,
+    "Content": "I think we're we're in an incredibly difficult position at the moment because we've been trying to talk about these things now for a very long time and so we're at a point where we need to escalate protest so we can gain more media attention on the subject.",
+    "Enhancing": [
+     "Escalate protest for attention",
+     "Media attention importance",
+     "Escalation for attention",
+     "Escalating protest for attention",
+     "Escalating protest for attention"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Media attention importance",
+       "Escalate protest for attention",
+       "Escalation for attention",
+       "Escalating protest for attention"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Escalate protest for attention",
+       "Media attention importance"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Escalate protest for attention",
+       "Escalation for attention"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 4,
+    "Content": "I don't know anyone you persuade. \\I haven't heard anyone go. you know what, I was a meat eater and I saw big ben being desecrated this great monument in this country and I thought I know what I'll do. I'm going to go and give up meat and start eating gruel. I haven't heard a single human being say that. Why would they?",
+    "Enhancing": [
+     "Personal freedom",
+     "Personal choice",
+     "NA",
+     "Preserving personal choice",
+     "Personal freedom"
+    ],
+    "Undercutting": [
+     "Respect for monuments",
+     "Respect for monuments",
+     "NA",
+     "Persuasion through vandalism",
+     "Preserving historical monuments"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Personal freedom",
+       "Personal choice",
+       "Preserving personal choice",
+       "Respect for monuments"
+      ],
+      "Undercutting": [
+       "Persuasion through vandalism"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Personal freedom",
+       "Personal choice",
+       "Preserving personal choice"
+      ],
+      "Undercutting": [
+       "Persuasion through vandalism"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Persuasion through vandalism"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 5,
+    "Content": "I think the purpose of protests is not necessarily to win over people. It's to bring these important conversations to the table.",
+    "Enhancing": [
+     "Raising awareness",
+     "Raising awareness",
+     "Raising awareness",
+     "Raising public awareness",
+     "Raising public awareness"
+    ],
+    "Undercutting": [
+     "Personal freedom",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Raising awareness",
+       "Raising public awareness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Raising awareness",
+       "Raising public awareness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Raising awareness",
+       "Raising public awareness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 6,
+    "Content": "But we know the conversation. You you're a vegan, right? I'm a meat eater, Why can't we just both live happily in each other's orbit? Why can't you let me just get on with eating meat and you eat your gruel and we're all go home happy.",
+    "Enhancing": [
+     "Individual choice",
+     "Live and let live",
+     "Individual choice",
+     "Individual choice",
+     "Individual choice"
+    ],
+    "Undercutting": [
+     "Individual choice",
+     "Personal freedom",
+     "Individual choice",
+     "Individual choice respect",
+     "Individual choice"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Individual choice",
+       "Live and let live"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Individual choice"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Individual choice",
+       "Persoanl freedom"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 7,
+    "Content": "Because we know animal farming and fishing are a leading cause of the climate.",
+    "Enhancing": [
+     "Climate and environment protection",
+     "Environmental protection",
+     "Environmental responsibility",
+     "Climate change prevention",
+     "Environmental protection"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "Environmental harm",
+     "Protecting personal choice"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Climate and environment protection",
+       "Environmental protection",
+       "Environmental responsibility",
+       "Climate change prevention"
+      ],
+      "Undercutting": [
+       "NA",
+       "Environmental harm"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Climate and environment protection",
+       "Environmental protection",
+       "Environmental responsibility",
+       "Climate change prevention"
+      ],
+      "Undercutting": [
+       "Protecting personal choice"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Climate and environment protection",
+       "Environmental protection",
+       "Environmental responsibility",
+       "Climate change prevention"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 8,
+    "Content": "We know having a strictly vegan diet is bad for you as well.",
+    "Enhancing": [
+     "Personal freedom",
+     "Personal freedom",
+     "Individual choice",
+     "Individual choice",
+     "Personal choice"
+    ],
+    "Undercutting": [
+     "Personal dietary choices",
+     "Health concerns",
+     "Health concerns",
+     "Human health concerns",
+     "Health concerns"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Vegan diet health concerns",
+       "Personal freedom",
+       "Individual choice"
+      ],
+      "Undercutting": [
+       "NA",
+       "Vegan diet is healthy"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Health concerns",
+       "Human health concerns"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Health concerns",
+       "Vegan diet"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 9,
+    "Content": "Well that's not true.",
+    "Enhancing": [
+     "Health misinformation",
+     "Health value",
+     "Health misinformation prevention",
+     "Health awareness",
+     "Health promotion"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Vegan diet is healthy"
+      ],
+      "Undercutting": [
+       "Health misinformation",
+       "Vegan diet health concern"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Health concerns"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Vegan diet"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 10,
+    "Content": "True a lot of science says it's bad for you. What do you eat? Do we eat almonds? Should you eat almond milk?",
+    "Enhancing": [
+     "Personal choice",
+     "Personal dietary choices",
+     "Personal dietary choices",
+     "Personal freedom",
+     "Individual freedom"
+    ],
+    "Undercutting": [
+     "Personal dietary choices",
+     "Health concerns",
+     "Personal dietary choices",
+     "Health concerns",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Vegan diet health concern"
+      ],
+      "Undercutting": [
+       "Vegan diet is healthy",
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Health concerns on vegatarian diet"
+      ],
+      "Undercutting": [
+       "4"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Health value"
+      ],
+      "Undercutting": [
+       "Vagan diet"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Vegan",
+  "Data_id": 1,
+  "Speaker_count": 2,
+  "Conversation": [
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 0,
+    "Content": "Is a bee one of these things, an animal?",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 1,
+    "Content": "Of course a bee is an animal",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 2,
+    "Content": "if a bee's an animal, why are you slaughtering them?",
+    "Enhancing": [
+     "Animal welfare",
+     "Animal welfare",
+     "Animal rights",
+     "Animal welfare",
+     "Animal welfare"
+    ],
+    "Undercutting": [
+     "Animal Welfare",
+     "Animal welfare",
+     "Animal welfare",
+     "Animal welfare",
+     "Animal welfare"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Animal welfare",
+       "Animal rights"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Animal welfare"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Animal welfare",
+       "Animal protection"
+      ],
+      "Undercutting": [
+       "Protecting any animals"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 3,
+    "Content": "Why are you not talking about the most important issue that is facing our planet today?",
+    "Enhancing": [
+     "Environmental importance",
+     "Environmental importance",
+     "Environmental concern",
+     "Environmental urgency",
+     "Environmental importance"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Environmental importance",
+       "Environmental concern",
+       "Environmental urgency"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Environmental importance",
+       "Environmental concern",
+       "Environmental urgency"
+      ],
+      "Undercutting": [
+       "Animal welfare"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Environmental importance"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 4,
+    "Content": "Because it's empty hypocrisy",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "Exposing perceived hypocrisy",
+     "Exposing perceived hypocrisy",
+     "Exposing perceived hypocrisy"
+    ],
+    "Undercutting": [
+     "Hypocrisy in environmentalism",
+     "Empty hypocrisy",
+     "hypocrisy in action",
+     "Hypocrisy in veganism",
+     "Hypocrisy in veganism"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Exposing perceived hypocrisy"
+      ],
+      "Undercutting": [
+       "Hypocrisy in environmentalism",
+       "Empty hypocrisy",
+       "hypocrisy in action",
+       "Hypocrisy in veganism"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Exposing perceived hypocrisy"
+      ],
+      "Undercutting": [
+       "Hypocrisy in environmentalism",
+       "Empty hypocrisy",
+       "hypocrisy in action",
+       "Hypocrisy in veganism"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 5,
+    "Content": "It is not hypocris",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "Not hypocrisy"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Environmentalism is hypocrisy"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Exposing perceived hypocrisy"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 6,
+    "Content": "I meet so many vegans who devour avocados and almonds and don't seem to realize it involves a slaughter of billions of bees",
+    "Enhancing": [
+     "Consistency in beliefs",
+     "Consistency in beliefs",
+     "Consistency in beliefs",
+     "Consistency in beliefs",
+     "Inconsistency awareness"
+    ],
+    "Undercutting": [
+     "Hypocrisy in veganism",
+     "Hypocrisy in veganism",
+     "Bee protection",
+     "Inconsistency in ethics",
+     "Hypocrisy in veganism"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Consistency in beliefs",
+       "Bee protection",
+       "Inconsistency awareness"
+      ],
+      "Undercutting": [
+       "Inconsistency in ethics",
+       "Hypocrisy in veganism"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Animal welfare",
+       "Animal protection"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Consistency in beliefs"
+      ],
+      "Undercutting": [
+       "Inconsistency in ethics"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 7,
+    "Content": "Both almonds and avocados are less damaging to the planets.",
+    "Enhancing": [
+     "Environmental protection",
+     "Less environmental damage",
+     "Less environmental damage",
+     "Less environmental damage",
+     "Environmental impact reduction"
+    ],
+    "Undercutting": [
+     "Environmental impact",
+     "Environmental harm reduction",
+     "Environmental impact concerns",
+     "Environmental impact concerns",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Less environmental damage",
+       "Environmental impact reduction"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Environmental protection",
+       "Less environmental damage",
+       "Environmental impact reduction"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 8,
+    "Content": "Oh they're less damaging. What about how they get flown here from california? What about how they're getting trucked across Europe?",
+    "Enhancing": [
+     "Environmental impact",
+     "Environmental impact concern",
+     "Environmental impact",
+     "Environmental impact",
+     "Environmental impact awareness"
+    ],
+    "Undercutting": [
+     "Environmental impact",
+     "Environmental impact",
+     "Environmental impact",
+     "Environmental impact",
+     "Environmental impact"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Environmental impact of Veganism"
+      ],
+      "Undercutting": [
+       "Veganism is enviromental-friendly"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Environmental impact",
+       "Environmental impact concern",
+       "Environmental impact awareness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Environmental impact awareness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 1,
+    "Utterance_id": 9,
+    "Content": "It's still not damaging. It's still that route. That is exactly what it is about.",
+    "Enhancing": [
+     "Less environmental damage",
+     "Less environmental damage",
+     "Less environmental damage",
+     "Less environmental damage",
+     "Less environmental damage"
+    ],
+    "Undercutting": [
+     "Environmental impact concern",
+     "Environmental impact concern",
+     "Environmental impact concern",
+     "Environmental impact concern",
+     "Environmental impact concern"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Less environmental damage"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Environmental impact concern"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Less environmental damage"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 10,
+    "Content": "Anyway look, I'm starving and you're not gonna persuade me and my response to you, destroying all these things is to have a big mac because you know what, it's a free country, it's a democracy and i'm allowed to eat meat and i'm certainly allowed to eat meat when someone who kills bees to feed their avocado habit.",
+    "Enhancing": [
+     "Personal Choice",
+     "Individual freedom",
+     "Individual choice",
+     "Individual freedom",
+     "Individual freedom"
+    ],
+    "Undercutting": [
+     "Environmental impact",
+     "Environmental impact",
+     "Environmental impact",
+     "Environmental hypocrisy",
+     "Animal welfare"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Personal Choice",
+       "Individual freedom",
+       "Individual choice",
+       "Inconsistency awareness"
+      ],
+      "Undercutting": [
+       "Inconsistency in ethics"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Personal Choice",
+       "Individual freedom",
+       "Individual freedom"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Personal Choice",
+       "Individual freedom"
+      ],
+      "Undercutting": [
+       "Environmental impact"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Immigration",
+  "Data_id": 2,
+  "Speaker_count": 2,
+  "Conversation": [
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 0,
+    "Content": "First of all I had a very good meeting with the President of Mexico. Very nice man. We will be doing very much better with Mexico on trade deals. Believe me. The NAFTA deal signed by her husband is one of the worst deals ever made of any kind signed by anybody. It's a disaster. Hillary Clinton wanted the wall. Hillary Clinton fought for the wall in 2006 or there abouts. Now she never gets anything done so naturally the wall wasn't built but Hillary Clinton wanted the wall.",
+    "Enhancing": [
+     "National economic interest",
+     "Economic improvement, border security",
+     "Economic improvement, border security",
+     "Nationalism, fair trade",
+     "Economic improvement"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "National economic interest",
+       "Economic improvement, border security",
+       "Nationalism, fair trade",
+       "Economic improvement",
+       "border security",
+       "Nationalism",
+       "Fair trade"
+      ],
+      "Undercutting": [
+       "Unfair trade"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "National economic interest",
+       "Economic improvement, border security"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 3,
+    "Utterance_id": 1,
+    "Content": "I voted for border security and there are...",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "Bipartisan border security",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Bipartisan border security",
+       "Border security"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Bipartisan border security"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 2,
+    "Content": "And the wall",
+    "Enhancing": [
+     "NA",
+     "National security",
+     "Strong border security",
+     "National security",
+     "National security"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "National security",
+       "Strong border security"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "National security",
+       "Strong border security"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 3,
+    "Utterance_id": 3,
+    "Content": "There are some limited places where that was appropriate there also is necessarily going to be new technology and how best to deploy that but it is clear when you look at what Donald has been proposing he started his campaign bashing immigrants, calling Mexican immigrants rapists and criminals and drug dealers. He has a very different view about what we should do to deal with immigrants. Now what I am also arguing is that bringing undocumented immigrants out from the shadows, putting them into the formal economy will be good because that employers can't exploit them and undercut Americans wages. And Donald knows a lot about this, he used undocumented labor to build the Trump Tower. He underpaid undocumented workers and when they complained he basically said what a lot of employers do: You complain I'll get you deported. I want to get everybody out of the shadows get the economy working and not let employers like Donald exploit undocumented workers which hurts them but also hurts American workers.",
+    "Enhancing": [
+     "Fair treatment",
+     "Fair treatment of workers",
+     "Economic fairness",
+     "Economic fairness",
+     "Economic fairness, worker protection"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "Exploiting undocumented workers",
+     "Exploitation of workers"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Fair treatment",
+       "Fair treatment of workers",
+       "Economic fairness",
+       "Economic fairness, worker protection",
+       "Worker protection"
+      ],
+      "Undercutting": [
+       "Exploiting undocumented workers",
+       "Exploitation of workers"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Fair treatment",
+       "Fair treatment of workers",
+       "Economic fairness"
+      ],
+      "Undercutting": [
+       "Exploiting undocumented workers",
+       "Exploitation of workers"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Fair treatment",
+       "Economic fairness, worker protection"
+      ],
+      "Undercutting": [
+       "Exploiting undocumented workers"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 4,
+    "Content": "The president Obama has moved millions of people out. Nobody knows about it, nobody talks about it. But under Obama millions of people have been moved out of this country. They've been deported. She doesn't want to say that but that's what's happened and that's what's happened big league. As far as moving these people out, we either have a country or we don't we're a country of laws we either have a border or we don't. Now you can come back in and you can become a citizen but it's very unfair we have millions of people that did it the right way, they're online, they're waiting. We're going to speed up the process big-league because it's very inefficient but they're online and they're waiting to become citizens. Very unfair that somebody runs across the border, becomes a citizen. Under her plan, you have open borders you would have a disaster on trade and you will have a disaster with your open borders. What we won't say is that President Obama has deported millions and millions of people just the way is.",
+    "Enhancing": [
+     "Rule of law",
+     "Rule of law",
+     "Law and order",
+     "Law and order",
+     "Rule of law"
+    ],
+    "Undercutting": [
+     "Fairness in immigration",
+     "Fair immigration process",
+     "Fair immigration process",
+     "Fairness in immigration",
+     "Fairness for immigrants"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Rule of law",
+       "Law and order",
+       "Fairness in immigration",
+       "Fair immigration process"
+      ],
+      "Undercutting": [
+       "Unfair immigration",
+       "Illegal immigration"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Rule of law",
+       "Law and order"
+      ],
+      "Undercutting": [
+       "Fair treatment of workers"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Rule of law",
+       "Law and order"
+      ],
+      "Undercutting": [
+       "Unrestricted Immigration",
+       "Country border protection"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 3,
+    "Utterance_id": 5,
+    "Content": "We will not have open border that is a mischaracterization. We will have secure borders but we will also have reform and this used to be a bipartisan issue. Ronald Reagan is the last president to sign immigration reform and George W Bush supported it as well",
+    "Enhancing": [
+     "Bipartisan cooperation",
+     "Bipartisan cooperation",
+     "Bipartisan cooperation",
+     "Bipartisan cooperation",
+     "Bipartisan immigration reform"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Bipartisan cooperation",
+       "Secure borders"
+      ],
+      "Undercutting": [
+       "Open border"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Bipartisan cooperation"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Immigration",
+  "Data_id": 3,
+  "Speaker_count": 3,
+  "Conversation": [
+   {
+    "Speaker_id": 4,
+    "Utterance_id": 0,
+    "Content": "Let me ask about your immigration policy, Mr. Vice President. The Obama Administration did fail to deliver immigration reform, which had been a key promise during the administration. It also presided over record deportations, as well as, family detentions at the border before changing course. So why should voters trust you with an immigration overhaul now?",
+    "Enhancing": [
+     "NA",
+     "Accountability and Trust",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Accountability and Trust",
+       "Political promise"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Accountability and Trust"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 5,
+    "Utterance_id": 1,
+    "Content": "Because we made a mistake made. It took too long to get it right. Took too long to get it right. I\u2019ll be President of the United States, not Vice President of the United States. And the fact is I\u2019ve made it very clear. Within a 100 days, I\u2019m going to send to the United States Congress a pathway to citizenship for over 11 million undocumented people. And all of those so-called dreamers, those DACA kids, they\u2019re going to be immediately certified again to be able to stay in this country and put on a path to citizenship. The idea that they are being sent home by this guy and they want to do that is they\u2019ve gone to they\u2019ve never seen before. I can imagine. You\u2019re five years old. Your parents are taking across the Rio Grande River and it\u2019s illegal. And you say, \"Oh, no, Mom. Leave me here. I\u2019m not going to go with you.\" They been here. Many of them are model citizens. Over 20,000 of them are first responders out there taking care of people during this crisis. We owe them. We owe them.",
+    "Enhancing": [
+     "Compassion for immigrants",
+     "Compassion for immigrants",
+     "Compassion for immigrants",
+     "Compassion for immigrants",
+     "Compassion for immigrants"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Compassion for immigrants",
+       "Pathway to citizenship"
+      ],
+      "Undercutting": [
+       "Family Separation"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Compassion for immigrants"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Compassion for immigrants"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 2,
+    "Content": "Kristen, he had eight years to do what he said he was going to do. And I\u2019ve changed. Without having a specific, we got rid of catch and release. We got rid of a lot of horrible things that they put in and that they lived with. But he had eight years he was Vice President. He did nothing except build cages to keep children in.",
+    "Enhancing": [
+     "Past performance accountability",
+     "Criticism of inaction",
+     "Accountability for past actions",
+     "Accountability for promises",
+     "Inaction criticism"
+    ],
+    "Undercutting": [
+     "NA",
+     "Trust in leadership",
+     "Responsibility for immigrants",
+     "Accountability for past actions",
+     "Responsibility for reform"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Past performance accountability",
+       "Criticism of inaction",
+       "Accountability for past actions",
+       "Accountability for promises",
+       "Inaction criticism"
+      ],
+      "Undercutting": [
+       "NA",
+       "Caging children"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Past performance accountability",
+       "Accountability for past actions"
+      ],
+      "Undercutting": [
+       "Trust in leadership",
+       "Accountability for past actions"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Trust in leadership"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 5,
+    "Utterance_id": 3,
+    "Content": "The catch and release, you know what he\u2019s talking about there? If in fact you had a family came across and they were arrested, they in fact were given a date to show up for their hearing. They were released. And guess what? They showed up for a hearing. And this is the first President in the history of the United States of America that anybody seeking asylum has to do it in another country. That\u2019s never happened before in America. That\u2019s never happened before in America. You come to the United States and you make your case that, \"I seek asylum based on the following premise, why I deserve it under American law.\" They\u2019re sitting in squalor on the other side of the river.",
+    "Enhancing": [
+     "Humanitarian treatment",
+     "Compassion for immigrants",
+     "Compassion for immigrants",
+     "Compassion for immigrants",
+     "Humanitarian treatment"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Humanitarian treatment",
+       "Compassion for immigrants"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Humanitarian treatment",
+       "Compassion for immigrants"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Compassion for immigrants"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 4,
+    "Content": "So important. It just shows that he has no understanding of immigration, of the laws. Catch and release is a disaster. A murderer would come in. A rapist would come in. A very bad person would come in. We would take their name. We have to release them into our country. And then you say they come back. Less than 1% of the people come back. We have to send ICE out and Border Patrol out to find them. We would say, \"Come back in two years, three years. We\u2019re going to give you a court case. You did Perry Mason. We\u2019re going to give you a court case.\" When you say they come back, they don\u2019t come back, Joe. They never come back. Only the really\u2026 I hate to say this, but those with the lowest IQ, they might come back, but there are very, very few. You don\u2019t know the law, Joe.",
+    "Enhancing": [
+     "National security",
+     "National security",
+     "National security",
+     "National Security",
+     "Law enforcement"
+    ],
+    "Undercutting": [
+     "Humanizing immigrants",
+     "Humanitarian treatment",
+     "Human dignity and compassion",
+     "Humanizing immigrants",
+     "Compassionate immigration policy"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "National Security",
+       "Law enforcement",
+       "Law and order"
+      ],
+      "Undercutting": [
+       "Open border"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "National security",
+       "Law enforcement"
+      ],
+      "Undercutting": [
+       "Humanizing immigrants",
+       "Humanitarian treatment",
+       "Human dignity and compassion",
+       "Compassionate immigration policy"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "National security"
+      ],
+      "Undercutting": [
+       "Humanitarian treatment"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 5,
+    "Utterance_id": 5,
+    "Content": "Know the law, what he\u2019s telling you is simply not true. Check it out.",
+    "Enhancing": [
+     "NA",
+     "Truthfulness",
+     "Truthfulness",
+     "Truthfulness",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA",
+       "Truthfulness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "National security"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Immigration",
+  "Data_id": 4,
+  "Speaker_count": 3,
+  "Conversation": [
+   {
+    "Speaker_id": 4,
+    "Utterance_id": 0,
+    "Content": "We\u2019re going to talk about immigration now, gentlemen. And we\u2019re going to talk about families within this context. Mr. President, your administration separated children from their parents at the border, at least 4,000 kids. You\u2019ve since reversed your zero tolerance policy, but the United States can\u2019t locate the parents of more than 500 children. So how will these families ever be reunited?",
+    "Enhancing": [
+     "Family reunification",
+     "Family reunification",
+     "Family reunification",
+     "NA",
+     "Family reunification"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Family reunification"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Family reunification"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Family reunification"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 1,
+    "Content": "Children are brought here by coyotes and lots of bad people, cartels and they\u2019re brought here and they used to use them to get into our country. We now have as strong a border as we\u2019ve ever had. We\u2019re over 400 miles of brand new wall. You see the numbers. And we let people in, but they have to come in legally.",
+    "Enhancing": [
+     "Border security",
+     "Border security",
+     "Border security",
+     "Border security",
+     "Border security"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Border security",
+       "Legal immigration",
+       "Law and order"
+      ],
+      "Undercutting": [
+       "Illegal immigration"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Border security"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Border security"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 4,
+    "Utterance_id": 2,
+    "Content": "But how will you reunite these kids with their families, Mr. President?",
+    "Enhancing": [
+     "Family Reunification",
+     "Family reunification",
+     "Family reunification",
+     "Family reunification",
+     "Family reunification"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Family Reunification"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Family Reunification"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Family Reunification"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 3,
+    "Content": "But let me just tell you. Let me just tell you. They built cages. They used to say I built the cages, and then they had a picture in a certain newspaper, and it was the picture of these horrible cages and they said, \"Look at these cages. President Trump built them.\" And then it was determined they were built in 2014. That was him. They built cages.",
+    "Enhancing": [
+     "NA",
+     "Avoiding blame",
+     "Avoiding blame",
+     "Blaming previous administration",
+     "Deflecting responsibility"
+    ],
+    "Undercutting": [
+     "Honesty and accountability",
+     "Accountability and responsibility",
+     "Responsibility for actions",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA",
+       "Accountability and responsibility"
+      ],
+      "Undercutting": [
+       "Deflecting responsibility",
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Accountability and responsibility",
+       "Responsibility for actions"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Honesty and accountability"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 4,
+    "Utterance_id": 4,
+    "Content": "Do you have a plan to reunite the kids with their families?",
+    "Enhancing": [
+     "Family reunification",
+     "Family reunification",
+     "Reuniting separated families",
+     "Family reunification",
+     "Family reunification"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Family reunification",
+       "Reuniting separated families"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Family reunification"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Family reunification",
+       "Reuniting separated families"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 5,
+    "Content": "Yes. We\u2019re working on it very\u2026 We\u2019re trying very hard. But a lot of these kids come out without the parents. They come over through cartels and through coyotes and through gangs.",
+    "Enhancing": [
+     "NA",
+     "Security and law enforcement",
+     "Border control",
+     "National security",
+     "Maintaining border security"
+    ],
+    "Undercutting": [
+     "Family reunification",
+     "Family unity",
+     "Family reunification",
+     "Family reunification",
+     "Family reunification"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Family reunification",
+       "Security and law enforcement",
+       "Border control",
+       "National security",
+       "Maintaining border security"
+      ],
+      "Undercutting": [
+       "Illegal immigrants"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Security and law enforcement",
+       "Border control",
+       "National security",
+       "Maintaining border security"
+      ],
+      "Undercutting": [
+       "Family reunification",
+       "Family unity"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Border control",
+       "National security"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 5,
+    "Utterance_id": 6,
+    "Content": "These 500-plus kids came with parents. They separated them at the border to make it a disincentive to come to begin with. \"Be real tough. We\u2019re really strong.\" And guess what? They cannot\u2026 Coyotes didn\u2019t bring them over. Their parents were with them. They got separated from their parents. And it makes us a laughingstock and violates every notion of who we are as a nation.",
+    "Enhancing": [
+     "Family unity",
+     "Family unity",
+     "Compassion for families",
+     "Compassion for families",
+     "Family unity"
+    ],
+    "Undercutting": [
+     "Family separation",
+     "Family separation",
+     "Family unity",
+     "Family separation",
+     "Family separation"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Family unity"
+      ],
+      "Undercutting": [
+       "Family separation"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Family unity",
+       "Compassion for families"
+      ],
+      "Undercutting": [
+       "Border control"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Family unity"
+      ],
+      "Undercutting": [
+       "Family separation"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 7,
+    "Content": "Kristen, they did it. We changed the policy. They did it. We changed.",
+    "Enhancing": [
+     "Responsibility for actions",
+     "Responsibility for actions",
+     "Responsibility shift",
+     "Responsibility shift",
+     "Responsibility for actions"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Responsibility for actions"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Responsibility for actions",
+       "Responsibility shift"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 5,
+    "Utterance_id": 8,
+    "Content": "We did not separate them",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA",
+       "Deflecting responsibility"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 2,
+    "Utterance_id": 9,
+    "Content": "They built the cages. Who built the cages, Joe?",
+    "Enhancing": [
+     "NA",
+     "Accountability for actions",
+     "Accountability for actions",
+     "Accountability for actions",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "Accountability for actions",
+     "Responsibility and accountability",
+     "NA",
+     "Accountability for actions"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Accountability for actions"
+      ],
+      "Undercutting": [
+       "NA",
+       "Deflecting responsibility"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Accountability for actions"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Vegan",
+  "Data_id": 5,
+  "Speaker_count": 2,
+  "Conversation": [
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 0,
+    "Content": "My question is, if it were just in the fields and they were milked every day and they weren't killed, would you be fine withthat",
+    "Enhancing": [
+     "NA",
+     "Seeking clarification",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 6,
+    "Utterance_id": 1,
+    "Content": "We shouldn't be exploiting animals, period.",
+    "Enhancing": [
+     "Animal rights",
+     "Animal rights",
+     "Animal exploitation prevention",
+     "Animal non-exploitation",
+     "Animal exploitation prevention"
+    ],
+    "Undercutting": [
+     "Exploiting animals",
+     "Exploiting animals",
+     "Animal exploitation",
+     "Exploitation of animals",
+     "Animal exploitation"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Animal rights",
+       "Animal exploitation prevention",
+       "Animal non-exploitation"
+      ],
+      "Undercutting": [
+       "Exploiting animals",
+       "Animal exploitation",
+       "Exploitation of animals"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Animal rights",
+       "Animal exploitation prevention",
+       "Animal non-exploitation"
+      ],
+      "Undercutting": [
+       "Exploiting animals"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Animal rights"
+      ],
+      "Undercutting": [
+       "Animal exploitation"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 2,
+    "Content": "Right, so your issue is not really about milk, is it? Your issue is just anything to do with animals you've got a problem with, right?",
+    "Enhancing": [
+     "Seeking clarification",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "Exploiting animals",
+     "Animal exploitation",
+     "NA",
+     "Animal exploitation",
+     "Animal exploitation opposition"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Animal exploitation prevention",
+       "Animal non-exploitation"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 6,
+    "Utterance_id": 3,
+    "Content": "Using animals in viewing them as products immoral issue.",
+    "Enhancing": [
+     "Animal rights",
+     "Animal exploitation is immoral",
+     "Animal rights",
+     "Animal rights",
+     "Animal rights"
+    ],
+    "Undercutting": [
+     "Animal exploitation",
+     "Animal exploitation",
+     "Animal exploitation",
+     "Exploitation of animals",
+     "Exploitation of animals"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Animal rights",
+       "Animal exploitation is immoral"
+      ],
+      "Undercutting": [
+       "Animal exploitation",
+       "Exploitation of animals"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Animal rights"
+      ],
+      "Undercutting": [
+       "Animal exploitation",
+       "Exploitation of animals"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Animal rights"
+      ],
+      "Undercutting": [
+       "Animal exploitation"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 0,
+    "Utterance_id": 4,
+    "Content": "What is wrong with it with a cow being milked for milk?",
+    "Enhancing": [
+     "Use of animal products",
+     "Utilizing animal products",
+     "NA",
+     "Utilitarianism",
+     "Utilitarian practicality"
+    ],
+    "Undercutting": [
+     "Animal exploitation",
+     "Exploitation of animals",
+     "NA",
+     "Animal exploitation",
+     "Animal exploitation"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Use of animal products",
+       "Utilizing animal products",
+       "Utilitarianism",
+       "Utilitarian practicality"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Use of animal products",
+       "Utilitarianism",
+       "Utilitarian practicality"
+      ],
+      "Undercutting": [
+       "Animal non-exploitation"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Animal exploitation"
+      ],
+      "Undercutting": [
+       "Animal right"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 6,
+    "Utterance_id": 5,
+    "Content": "It's unnecessary. Why you need breast milk? You need breast milk from a cow? You're not a baby cow",
+    "Enhancing": [
+     "Animal exploitation prevention",
+     "Animal exploitation avoidance",
+     "Animal exploitation avoidance",
+     "Animal rights",
+     "Animal exploitation wrong"
+    ],
+    "Undercutting": [
+     "Unnecessary animal exploitation",
+     "Unnecessary animal exploitation",
+     "Naturalness and necessity",
+     "Unnecessary animal exploitation",
+     "Animal exploitation"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Animal exploitation prevention",
+       "Animal exploitation avoidance",
+       "Animal rights",
+       "Animal exploitation wrong"
+      ],
+      "Undercutting": [
+       "Unnecessary animal exploitation",
+       "Animal exploitation"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Animal exploitation prevention",
+       "Animal exploitation avoidance",
+       "Animal exploitation avoidance"
+      ],
+      "Undercutting": [
+       "Unnecessary animal exploitation"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Animal rights"
+      ],
+      "Undercutting": [
+       "Animal exploitation"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Vegan",
+  "Data_id": 6,
+  "Speaker_count": 3,
+  "Conversation": [
+   {
+    "Speaker_id": 7,
+    "Utterance_id": 0,
+    "Content": "When I was in the hiking there's mountain lions that coming and kill people you known that right? That's in Orange County. That's not in the jungle in Africa.",
+    "Enhancing": [
+     "Safety awareness",
+     "Safety awareness",
+     "Safety awareness",
+     "Safety awareness",
+     "Safety awareness"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Safety awareness",
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Safety awareness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Personal Safety"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 8,
+    "Utterance_id": 1,
+    "Content": "That's not an everyday situation",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "Minimizing perceived risk",
+     "NA",
+     "Minimizing risk perception"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA",
+       "Avoid extreme condition"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Safety awareness"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 7,
+    "Utterance_id": 2,
+    "Content": "But it's Orange County, mountain lions have killed hikers, kids",
+    "Enhancing": [
+     "Safety awareness",
+     "Safety awareness",
+     "Safety awareness",
+     "Safety awareness",
+     "Safety concerns"
+    ],
+    "Undercutting": [
+     "Personal safety importance",
+     "Safety and risk awareness",
+     "Safety of hikers",
+     "Safety of humans",
+     "Safety awareness"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Safety awareness",
+       "Safety concerns"
+      ],
+      "Undercutting": [
+       "Ignorance of safety concerns"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Safety awareness",
+       "Safety concerns"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Personal Safety"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 9,
+    "Utterance_id": 3,
+    "Content": "Yes, we're hiking in the mountains and there's a mountain lion. I have to be aware of the fact that I'm in mountain lion territory and be like I'm okay with the risk Because to be honest I'm not hiking with a gun I have no way to defend my friend",
+    "Enhancing": [
+     "Risk acceptance",
+     "Risk acceptance",
+     "Awareness of risk",
+     "Respecting wildlife habitats",
+     "Respecting animal life"
+    ],
+    "Undercutting": [
+     "Respecting wildlife space",
+     "Respecting wildlife safety",
+     "Respecting wildlife safety",
+     "Personal safety prioritization",
+     "Respecting nature's balance"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Risk acceptance",
+       "Respecting wildlife habitats",
+       "Respecting animal life",
+       "Respecting nature's balance",
+       "Respecting wildlife safety",
+       "Respecting wildlife space"
+      ],
+      "Undercutting": [
+       "Personal safety prioritization"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Risk acceptance",
+       "Awareness of risk",
+       "Respecting wildlife habitats",
+       "Respecting animal life"
+      ],
+      "Undercutting": [
+       "Personal safety prioritization"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Personal safety"
+      ],
+      "Undercutting": [
+       "Risk acceptance"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 7,
+    "Utterance_id": 4,
+    "Content": "You don't hike with a hiking pole.",
+    "Enhancing": [
+     "Self-defense preparation",
+     "Personal safety",
+     "Self-defense preparation",
+     "Personal safety importance",
+     "Practical self-defense"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Self-defense preparation",
+       "Personal safety",
+       "Personal safety importance",
+       "Practical self-defense"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Self-defense preparation",
+       "Personal safety",
+       "Practical self-defense"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Self-defense preparation",
+       "Practical self-defense"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 9,
+    "Utterance_id": 5,
+    "Content": "I mean I can pole against a mountain lion? I just want to say like even if I did and even if my attempt were to be successful. I would feel awful having killed the mountain lion.",
+    "Enhancing": [
+     "Respect for wildlife",
+     "Respect for wildlife",
+     "Respect for wildlife",
+     "Respect for wildlife",
+     "Respect for wildlife"
+    ],
+    "Undercutting": [
+     "Respecting animal life",
+     "Respecting animal life",
+     "Respecting animal life",
+     "Respect for wildlife",
+     "Respect for wildlife"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Respect for wildlife"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Respect for wildlife"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Vegan",
+  "Data_id": 7,
+  "Speaker_count": 3,
+  "Conversation": [
+   {
+    "Speaker_id": 10,
+    "Utterance_id": 0,
+    "Content": "Animal agriculture has reduced carbon emissions by 20 percent since 1990 65 percent of the land, the arable land, agriculture land in this country is grass. That locks in ninety billion tons of carbon into our soils, right? Animals are an essential part of the actual life cycle. They cannot emit more carbon than they eat. They are part of, they are part... and that's why Natural England and people like the RSPB actually support grazing animals. We're talking about grass-fed livestock here. We're talking about small butchers who have those short supply chains of low fat, uh, low travel distances, supporting the local food economy, which has a big effect",
+    "Enhancing": [
+     "Environmental sustainability",
+     "Environmental sustainability",
+     "Supporting local economy",
+     "Environmental sustainability",
+     "Environmental balance"
+    ],
+    "Undercutting": [
+     "Environmental impact",
+     "Environmental impact reduction",
+     "Environmental impact reduction",
+     "Environmental protection",
+     "Environmental impact"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Environmental sustainability",
+       "Supporting local economy",
+       "Environmental balance",
+       "Environmental impact reduction"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Animal agriculture development"
+      ],
+      "Undercutting": [
+       "Environmental impact reduction"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Environmental sustainability"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 11,
+    "Utterance_id": 1,
+    "Content": "We created a documentary called The Land of Hope and Glory, online, which talks all about what happens to animals in the UK. So there's two studies. The first study is a five-year study conducted by the University of Oxford; it's the most comprehensive study that has ever been conducted exploring the relation between the environment...",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "Environmental protection",
+     "Animal welfare awareness",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Animal welfare awareness",
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Environmental protection"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Environmental protection",
+       "Animal welfare awareness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 10,
+    "Utterance_id": 2,
+    "Content": "Is this the one that was run by a vegan?",
+    "Enhancing": [
+     "NA",
+     "Skepticism towards bias",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "Bias against vegans",
+     "Bias against vegans",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Skepticism towards bias",
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Bias against vegans"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 11,
+    "Utterance_id": 3,
+    "Content": "He wasn't vegan when he started, but he was vegan when he finished it because of what he found out. And what he discovered...",
+    "Enhancing": [
+     "NA",
+     "Promoting Environmental Sustainability",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Veganism",
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Promoting Environmental Sustainability"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 12,
+    "Utterance_id": 4,
+    "Content": "You may be, after this conversation, John, as well.",
+    "Enhancing": [
+     "NA",
+     "Humorous persuasion",
+     "NA",
+     "Humor in conversation",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 10,
+    "Utterance_id": 5,
+    "Content": "Not very likely.",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "Reducing meat consumption"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Reducing meat consumption",
+       "Veganism"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Reducing meat consumption"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 11,
+    "Utterance_id": 6,
+    "Content": "What he discovered is that 83% of the farmland that we use is currently dedicated to animal agriculture and if the world shifted to a plant-based diet, we can reduce the amount of land we need to animal agriculture by 75%. He conducted it and at the end he summarized by saying: the best thing that we can do for our planet is to live a vegan lifestyle. Now the second study was most comprehensive study ever conducted exploring the relationship between food and the environment. And it said that in this country, in the UK, we have to reduce our beef, our lamb, and our pig consumption by 90 percent, and our dairy and poultry and egg consumption by 60 percent, to not hit that 1.5 degree threshold rise in twelve years' time.",
+    "Enhancing": [
+     "Environmental protection",
+     "Environmental preservation",
+     "Environmental sustainability",
+     "Environmental preservation",
+     "Environmental protection"
+    ],
+    "Undercutting": [
+     "Environmental Impact Reduction",
+     "Environmental harm reduction",
+     "NA",
+     "Environmental Impact Reduction",
+     "Environmental sustainability"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Environmental protection",
+       "Environmental preservation",
+       "Environmental sustainability",
+       "Environmental Impact Reduction",
+       "Environmental harm reduction",
+       "Vegan lifestyle"
+      ],
+      "Undercutting": [
+       "Animal agriculture",
+       "Meat consumption"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Environmental protection",
+       "Environmental preservation",
+       "Environmental sustainability"
+      ],
+      "Undercutting": [
+       "Animal agriculture development"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Environmental protection",
+       "Environmental preservation",
+       "Environmental sustainability"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Immigration",
+  "Data_id": 8,
+  "Speaker_count": 2,
+  "Conversation": [
+   {
+    "Speaker_id": 13,
+    "Utterance_id": 0,
+    "Content": "Well first of all I think amnesty is the forgiveness of a wrong doing without consequence and that I've never supported that. I do not support that. I think there has to be consequences for violating our immigration laws. What I think is clear about this issue to begin with is we're not going to be able to make progress on illegal immigration until first illegal immigration is brought under control now.",
+    "Enhancing": [
+     "Consequences for actions",
+     "Consequences for actions",
+     "Consequences for actions",
+     "Consequences for actions",
+     "Consequences for actions"
+    ],
+    "Undercutting": [
+     "Law enforcement consequences",
+     "Consequence-free amnesty",
+     "NA",
+     "Consequence-free amnesty",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Law enforcement",
+       "Law and order"
+      ],
+      "Undercutting": [
+       "Consequence-free amnesty",
+       "Illegal immigration"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "rules of law"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Consequences for actions"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 14,
+    "Utterance_id": 1,
+    "Content": "The Rubio Schumer amnesty plan apparently supported by the donor class which is why Washington supported it. The Rubio Schumer amnesty plan passed the Senate and it was on the verge of passing the House house leadership intended to take it up and pass it with the Democrats overruling most of the Republicans and the question for anyone on illegal immigration is where were you in that fight, where did you stand you. There is a difference between me and senator Rubio.",
+    "Enhancing": [
+     "Rule of law",
+     "Preserving immigration integrity",
+     "Rule of law",
+     "Law enforcement",
+     "Rule of law"
+    ],
+    "Undercutting": [
+     "Rule of law",
+     "Rule of law",
+     "Rule of law",
+     "Amnesty without consequences",
+     "Rule of law"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Amnesty without consequences"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Rule of law",
+       "Preserving immigration integrity",
+       "Law enforcement"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Amnesty without consequences"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 13,
+    "Utterance_id": 2,
+    "Content": "When that issue was being debated, Ted Cruz at a committee hearing very passionately said I want immigration reform to pass, I want people to be able to come out of the shadows and he proposed an amendment that would have legalized people here. Not only that he proposed doubling the number of green cards, he proposed a 500% increase on guest workers now his position is different. Now he is a passionate opponent of all those things so he either wasn't telling the truth then or he isn't telling the truth now but to argue he's a purist on immigration",
+    "Enhancing": [
+     "Consistency in positions",
+     "Consistency in position",
+     "Consistency in positions",
+     "Truthfulness",
+     "Consistency in positions"
+    ],
+    "Undercutting": [
+     "Honesty and consistency",
+     "Consistency in positions",
+     "Consistency in positions",
+     "Consistency in positions",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Consistency in position",
+       "Consistency in positions",
+       "Truthfulness",
+       "Honesty and consistency",
+       "Inconsistency awareness"
+      ],
+      "Undercutting": [
+       "Inconsistency position"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Consistency in positions"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Consistency in positions",
+       "Honesty and consistency"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 14,
+    "Utterance_id": 3,
+    "Content": "you know the lines are very very clear, Marco right now supports citizenship for 12 million people here illegally, I oppose citizenship. Marcos stood on the debate stage and said that but I would note not only that Marco has a long record when it comes to amnesty, in the state of Florida's Speaker of the House, he supported in-state tuition for illegal immigrants. In addition to that Marco went on Univision in Spanish and said he would not rescind President Obama's illegal executive amnesty on his first day in office. I have promised to rescind every single illegal executive action including that one.",
+    "Enhancing": [
+     "Rule of law",
+     "Rule of law",
+     "Rule of law",
+     "Rule of law",
+     "Rule of law"
+    ],
+    "Undercutting": [
+     "Rule of law",
+     "Rule of law",
+     "Rule of law",
+     "Rule of law",
+     "Rule of Law"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Rescind amnesty"
+      ],
+      "Undercutting": [
+       "Illegal immigration",
+       "Amnesty",
+       "citizenship for illegals"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Rule of law"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Rule of law"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 13,
+    "Utterance_id": 4,
+    "Content": "First of all I don't know how he knows what I said on Univision coz he doesn't speak Spanish and second of all this is a disturbing pattern now because for a number of weeks now Ted Cruz has just been telling lies.",
+    "Enhancing": [
+     "Honesty and truthfulness",
+     "Truthfulness",
+     "Honesty and Truthfulness",
+     "Honesty and Truthfulness",
+     "Honesty and Truthfulness"
+    ],
+    "Undercutting": [
+     "Honesty and truthfulness",
+     "Honesty and Truthfulness",
+     "Honesty and Truthfulness",
+     "Honesty and Truthfulness",
+     "Honesty and truthfulness"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Honesty and truthfulness",
+       "Truthfulness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Honesty and truthfulness",
+       "Truthfulness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "Honesty and truthfulness"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   }
+  ]
+ },
+ {
+  "Topic": "Immigration",
+  "Data_id": 9,
+  "Speaker_count": 2,
+  "Conversation": [
+   {
+    "Speaker_id": 16,
+    "Utterance_id": 0,
+    "Content": "What you're proposing or what the president's proposing here does not sound like it's in keeping with American tradition when it comes to immigration. The Statute of Liberty says give me your tired your poor, your huddled masses, yearning to breathe free doesn't say anything about speaking English or being able to be a computer programmer. Aren't you trying to change what it means to be an immigrant coming into this country? If you're telling them you have to speak English? Can't people learn how to speak English when they get here?",
+    "Enhancing": [
+     "Upholding American tradition",
+     "Inclusion and tradition",
+     "Inclusivity and Compassion",
+     "American tradition",
+     "Inclusion and diversity"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Upholding American tradition",
+       "Inclusion and tradition",
+       "Inclusivity and Compassion",
+       "American tradition",
+       "Inclusion and diversity"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Inclusion and tradition",
+       "Inclusivity and Compassion",
+       "Inclusion and diversity"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 15,
+    "Utterance_id": 1,
+    "Content": "Well first of all right now it's a requirement that it be naturalized you had to speak English so the notion that speaking English wouldn't be a part of immigration systems would be actually a very ahistorical. Secondly I don't want to get off into a whole thing about history here but the Statue of Liberty is a symbol of Liberty enlightening the world, is a symbol of American liberty lighting the world, the poem that you're referring to that was added later it's not actually part of the original Statue of Liberty",
+    "Enhancing": [
+     "Historical accuracy",
+     "Historical accuracy",
+     "Historical accuracy",
+     "Historical accuracy",
+     "Historical accuracy"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Historical accuracy"
+      ],
+      "Undercutting": [
+       "Historical revisionism"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Historical accuracy"
+      ],
+      "Undercutting": [
+       "NA",
+       "Inclusion and tradition"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 16,
+    "Utterance_id": 2,
+    "Content": "That sounds like some national park revisionism.",
+    "Enhancing": [
+     "NA",
+     "NA",
+     "NA",
+     "NA",
+     "NA"
+    ],
+    "Undercutting": [
+     "Historical accuracy",
+     "Historical accuracy",
+     "Historical accuracy",
+     "NA",
+     "Historical accuracy"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "National park revisionism"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "Historical accuracy"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   },
+   {
+    "Speaker_id": 15,
+    "Utterance_id": 3,
+    "Content": "No. I appreciate your speech Jim, I appreciate your speech so let's talk about this. In 1970 when we let in 300,000 people a year, was that violating or not violating the Statue of Liberty law of the land? In nineteen in the 1990s, when it was half a million a year, was violating or not violating the Statue of Liberty law of the land? When it was seven hundred thousand years? Tell me what years meet Jim Acosta definition of the Statue of Liberty home law of the land?",
+    "Enhancing": [
+     "Historical context",
+     "Historical context",
+     "Historical accuracy",
+     "Practical historical perspective",
+     "NA"
+    ],
+    "Undercutting": [
+     "NA",
+     "NA",
+     "NA",
+     "Historical context relevance",
+     "National identity value"
+    ],
+    "Annotation_eval": {
+     "A2": {
+      "Enhancing": [
+       "Historical context"
+      ],
+      "Undercutting": [
+       "Illegal immigration"
+      ]
+     },
+     "A1": {
+      "Enhancing": [
+       "Historical accuracy",
+       "Practical historical perspective"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     },
+     "A3": {
+      "Enhancing": [
+       "NA"
+      ],
+      "Undercutting": [
+       "NA"
+      ]
+     }
+    }
+   }
+  ]
+ }
+]
