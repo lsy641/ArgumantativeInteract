@@ -5,16 +5,15 @@ import time
 openai.organization = "org-gcDzLqviJ8Ot15L4nFeIgR5L"
 openai.api_key = open("api_key", "r").read()
 
-model="gpt-3.5-turbo" #or gpt-3.5-turbo
+model="gpt-4" #or gpt-3.5-turbo
 params = {'temperature':1.0, 'max_tokens':2048, 'n':1}
+initial_hint = "You are able to judge if two phrases, which can be moral principles, \
+    intrinsic values, or moral concerns, are semantically equivalent to each other related to a specific topic."
 
-
-def llm_detector(file_name):
-    initial_hint = "By looking through the below conversations where people are arguing on a controversial topic,\
-        you are able to infer conflict between two utt the moral principle or the intrinsic value of each speaker according to what they say in each turn."
-
+def llm_ns_detector(file_name):
     with open(file_name) as f:
         data = json.load(f)
+    messages = [{"role":"system", "content":initial_hint}]  
 
     # Iterate over each object in the list
     i = 0
@@ -30,10 +29,10 @@ def llm_detector(file_name):
         print("=======Checking conflict in conversation_id: ", i)
         print("Topic: ", conv["Topic"])
         print("Speaker count: ", conv["Speaker_count"])
-        gt_conflicts = ground_truth(conv)
-        total_conflicts += len(gt_conflicts)
-        conv_data["count"] = len(gt_conflicts)
-        conv_data["conflicts"] = gt_conflicts
+        conflicts = semantic_check(conv, messages)
+        total_conflicts += len(conflicts)
+        conv_data["count"] = len(conflicts)
+        conv_data["conflicts"] = conflicts
         i += 1
         result_data.append(conv_data)
     return result_data
@@ -160,39 +159,44 @@ def semantic_check(conv, messages):
             # remove any prefixing spaces and to lower cases
             utter1_enhancing = utter1_enhancing.strip().lower()
             utter2_undercutting = utter2_undercutting.strip().lower()
-            if utter1_enhancing == "NA" or utter2_undercutting == "NA":
+            if utter1_enhancing == "na" or utter2_undercutting == "na":
                 continue
-            # check if the two utterance conflict with each other with semantic equivalence
-            last_command = {"role":"user", "content": f"Is \"{utter1_enhancing}\" and \"{utter2_undercutting}\" semantically equivalent under the topic of \"{topic}\"? Answer me Yes or No."}
             semantic_equiv = False
-            while True:
-                try:
-                    print("sending message...")
-                    response = openai.ChatCompletion.create(model=model, 
-                                                            messages=messages + [last_command], **params)
-                    # print("response: ", response)
-                    # print("message sent!")
-                    for choice in response["choices"]:
-                        # print(choice["message"]["content"])
-                        if choice["message"]["content"] == "Yes":
-                            semantic_equiv = True
-                            break
-                except Exception as e:
-                    print(messages)
-                    print(e)
-                    time.sleep(1.0)  
-                else:
-                    break
+            symbolic_equiv = False
+            if utter1_enhancing == utter2_undercutting:
+                symbolic_equiv = True
+            else:
+                # check if the two utterance conflict with each other with semantic equivalence
+                last_command = {"role":"user", "content": f"Is \"{utter1_enhancing}\" and \"{utter2_undercutting}\" semantically equivalent under the topic of \"{topic}\"? Answer me Yes or No."}
                 
-            # time.sleep(1.0) 
+                while True:
+                    try:
+                        print("sending message...")
+                        response = openai.ChatCompletion.create(model=model, 
+                                                                messages=messages + [last_command], **params)
+                        # print("response: ", response)
+                        # print("message sent!")
+                        for choice in response["choices"]:
+                            # print(choice["message"]["content"])
+                            if choice["message"]["content"] == "Yes":
+                                semantic_equiv = True
+                                break
+                    except Exception as e:
+                        print(messages)
+                        print(e)
+                        time.sleep(1.0)  
+                    else:
+                        break
+                    
+                # time.sleep(1.0) 
                 
-            if semantic_equiv:
+            if symbolic_equiv or semantic_equiv:
                 print("Conflict found!")
                 print(f"Conflict between utterance {utter1_id} and {utter2_id}, speaker {speaker1_id} and {speaker2_id}")
                 print(f"Reason: enhancing \"{utter1_enhancing}\" vs. undercutting \"{utter2_undercutting}\"")
                 print("Conflict detector type: Semantic")
                 print()
-                rlt.append((utter1_id, utter2_id))
+                rlt.append({"utter1": utter1_id, "utter2": utter2_id, "speaker1": speaker1_id, "speaker2": speaker2_id, "moral_principle": [utter1_enhancing, utter2_undercutting]})
     return rlt  
               
 # def symbolic_check(conv):
@@ -238,13 +242,19 @@ if __name__ == "__main__":
     #     result_data = ground_truth_detector(benchmark)
     #     ground_truth_data += result_data
     # benchmark_set = ["gun_violence_annotation_gpt-4.json"]
+    input_file = "gun_violence_annotation_gpt-4.json"
     input_file = "annotated_data.json"
 
     # generate ground truth data
-    ground_truth_data = ground_truth_detector(input_file)
+    # ground_truth_data = ground_truth_detector(input_file)
+    # with open("ground_truth_data.json", "w") as json_file:
+    #     json.dump(ground_truth_data, json_file)
+    
+    # LLM parsing with neural symbolic checking
+    llm_ns_data = llm_ns_detector(input_file)
 
-    with open("ground_truth_data.json", "w") as json_file:
-        json.dump(ground_truth_data, json_file)
+    with open("llm_ns_data_semantic_only.json", "w") as json_file:
+        json.dump(llm_ns_data, json_file)
         
     # statistics = {}
        
