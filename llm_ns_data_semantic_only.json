@@ -1,0 +1,392 @@
+[
+    {
+        "topic": "Abortion",
+        "id": 0,
+        "count": 1,
+        "conflicts": [
+            {
+                "utter1": 2,
+                "utter2": 1,
+                "speaker1": 1,
+                "speaker2": 0,
+                "moral_principle": [
+                    "empowerment of women",
+                    "empowerment of women"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Abortion",
+        "id": 1,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Abortion",
+        "id": 2,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Abortion",
+        "id": 3,
+        "count": 2,
+        "conflicts": [
+            {
+                "utter1": 1,
+                "utter2": 3,
+                "speaker1": 0,
+                "speaker2": 2,
+                "moral_principle": [
+                    "women's choices",
+                    "bodily autonomy"
+                ]
+            },
+            {
+                "utter1": 1,
+                "utter2": 6,
+                "speaker1": 0,
+                "speaker2": 1,
+                "moral_principle": [
+                    "women's choices",
+                    "women's autonomy"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Abortion",
+        "id": 4,
+        "count": 1,
+        "conflicts": [
+            {
+                "utter1": 1,
+                "utter2": 2,
+                "speaker1": 0,
+                "speaker2": 1,
+                "moral_principle": [
+                    "individual choice",
+                    "individual choice"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Transgender",
+        "id": 5,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Transgender",
+        "id": 6,
+        "count": 1,
+        "conflicts": [
+            {
+                "utter1": 2,
+                "utter2": 5,
+                "speaker1": 1,
+                "speaker2": 2,
+                "moral_principle": [
+                    "equality and fairness",
+                    "equality and fairness"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Transgender",
+        "id": 7,
+        "count": 4,
+        "conflicts": [
+            {
+                "utter1": 5,
+                "utter2": 3,
+                "speaker1": 3,
+                "speaker2": 0,
+                "moral_principle": [
+                    "protecting children's innocence",
+                    "protecting childhood innocence"
+                ]
+            },
+            {
+                "utter1": 5,
+                "utter2": 6,
+                "speaker1": 3,
+                "speaker2": 4,
+                "moral_principle": [
+                    "protecting children's innocence",
+                    "protecting childhood innocence"
+                ]
+            },
+            {
+                "utter1": 6,
+                "utter2": 3,
+                "speaker1": 4,
+                "speaker2": 0,
+                "moral_principle": [
+                    "protecting children's innocence",
+                    "protecting childhood innocence"
+                ]
+            },
+            {
+                "utter1": 6,
+                "utter2": 5,
+                "speaker1": 4,
+                "speaker2": 3,
+                "moral_principle": [
+                    "protecting children's innocence",
+                    "protecting children's innocence"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Transgender",
+        "id": 8,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Transgender",
+        "id": 9,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Gun Violence",
+        "id": 10,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Gun Violence",
+        "id": 11,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Gun Violence",
+        "id": 12,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Gun Violence",
+        "id": 13,
+        "count": 3,
+        "conflicts": [
+            {
+                "utter1": 1,
+                "utter2": 9,
+                "speaker1": 1,
+                "speaker2": 2,
+                "moral_principle": [
+                    "self-defense rights",
+                    "self-defense rights"
+                ]
+            },
+            {
+                "utter1": 4,
+                "utter2": 9,
+                "speaker1": 4,
+                "speaker2": 2,
+                "moral_principle": [
+                    "self-defense rights",
+                    "self-defense rights"
+                ]
+            },
+            {
+                "utter1": 9,
+                "utter2": 4,
+                "speaker1": 2,
+                "speaker2": 4,
+                "moral_principle": [
+                    "safety over weaponry",
+                    "safety over weapons"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Gun Violence",
+        "id": 14,
+        "count": 4,
+        "conflicts": [
+            {
+                "utter1": 2,
+                "utter2": 7,
+                "speaker1": 2,
+                "speaker2": 1,
+                "moral_principle": [
+                    "public safety concern",
+                    "protecting public safety"
+                ]
+            },
+            {
+                "utter1": 4,
+                "utter2": 7,
+                "speaker1": 2,
+                "speaker2": 1,
+                "moral_principle": [
+                    "public safety concern",
+                    "protecting public safety"
+                ]
+            },
+            {
+                "utter1": 6,
+                "utter2": 7,
+                "speaker1": 3,
+                "speaker2": 1,
+                "moral_principle": [
+                    "public safety concern",
+                    "protecting public safety"
+                ]
+            },
+            {
+                "utter1": 8,
+                "utter2": 7,
+                "speaker1": 3,
+                "speaker2": 1,
+                "moral_principle": [
+                    "public safety concern",
+                    "protecting public safety"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Vegan",
+        "id": 15,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Vegan",
+        "id": 16,
+        "count": 2,
+        "conflicts": [
+            {
+                "utter1": 8,
+                "utter2": 7,
+                "speaker1": 0,
+                "speaker2": 1,
+                "moral_principle": [
+                    "environmental impact",
+                    "environmental impact concerns"
+                ]
+            },
+            {
+                "utter1": 8,
+                "utter2": 9,
+                "speaker1": 0,
+                "speaker2": 1,
+                "moral_principle": [
+                    "environmental impact",
+                    "environmental impact concern"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Immigration",
+        "id": 17,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Immigration",
+        "id": 18,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Immigration",
+        "id": 19,
+        "count": 4,
+        "conflicts": [
+            {
+                "utter1": 0,
+                "utter2": 5,
+                "speaker1": 4,
+                "speaker2": 2,
+                "moral_principle": [
+                    "family reunification",
+                    "family reunification"
+                ]
+            },
+            {
+                "utter1": 2,
+                "utter2": 5,
+                "speaker1": 4,
+                "speaker2": 2,
+                "moral_principle": [
+                    "family reunification",
+                    "family reunification"
+                ]
+            },
+            {
+                "utter1": 4,
+                "utter2": 5,
+                "speaker1": 4,
+                "speaker2": 2,
+                "moral_principle": [
+                    "family reunification",
+                    "family reunification"
+                ]
+            },
+            {
+                "utter1": 6,
+                "utter2": 5,
+                "speaker1": 5,
+                "speaker2": 2,
+                "moral_principle": [
+                    "family unity",
+                    "family reunification"
+                ]
+            }
+        ]
+    },
+    {
+        "topic": "Vegan",
+        "id": 20,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Vegan",
+        "id": 21,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Vegan",
+        "id": 22,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Immigration",
+        "id": 23,
+        "count": 0,
+        "conflicts": []
+    },
+    {
+        "topic": "Immigration",
+        "id": 24,
+        "count": 1,
+        "conflicts": [
+            {
+                "utter1": 1,
+                "utter2": 2,
+                "speaker1": 15,
+                "speaker2": 16,
+                "moral_principle": [
+                    "historical accuracy",
+                    "historical accuracy"
+                ]
+            }
+        ]
+    }
+]
