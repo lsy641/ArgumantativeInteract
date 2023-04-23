@@ -7,21 +7,51 @@ openai.api_key = open("api_key", "r").read()
 
 model="gpt-3.5-turbo" #or gpt-3.5-turbo
 params = {'temperature':1.0, 'max_tokens':2048, 'n':1}
-initial_hint = "You are able to judge if two phrases, which can be moral principles, intrinsic values, or moral concerns, are semantically equivalent to each other related to a specific topic."
 
-def detect_conflict(file_name):
-    # Open the JSON file
+
+def llm_detector(file_name):
+    initial_hint = "By looking through the below conversations where people are arguing on a controversial topic,\
+        you are able to infer conflict between two utt the moral principle or the intrinsic value of each speaker according to what they say in each turn."
+
     with open(file_name) as f:
         data = json.load(f)
-    messages = [{"role":"system", "content":initial_hint}]  
 
     # Iterate over each object in the list
-    i = 1
+    i = 0
     total_conflicts = 0
-    symbolic_count= 0
-    semantic_count = 0
-    correct_count = 0
+    result_data = []
     for conv in data:
+        conv_data = {}
+        conv_data["topic"] = conv["Topic"]
+        conv_data["id"] = i
+        
+        # Iterate over each conversation in the list
+        # check the conflict in the given conversation obj
+        print("=======Checking conflict in conversation_id: ", i)
+        print("Topic: ", conv["Topic"])
+        print("Speaker count: ", conv["Speaker_count"])
+        gt_conflicts = ground_truth(conv)
+        total_conflicts += len(gt_conflicts)
+        conv_data["count"] = len(gt_conflicts)
+        conv_data["conflicts"] = gt_conflicts
+        i += 1
+        result_data.append(conv_data)
+    return result_data
+
+
+def ground_truth_detector(file_name):
+    with open(file_name) as f:
+        data = json.load(f)
+    
+    # Iterate over each object in the list
+    i = 0
+    total_conflicts = 0
+    result_data = []
+    for conv in data:
+        conv_data = {}
+        conv_data["topic"] = conv["Topic"]
+        conv_data["id"] = i
+        
         # Iterate over each conversation in the list
         # check the conflict in the given conversation obj
         print("=======Checking conflict in conversation_id: ", i)
@@ -29,20 +59,12 @@ def detect_conflict(file_name):
         print("Speaker count: ", conv["Speaker_count"])
         print("----ground truth check result:")
         gt_conflicts = ground_truth(conv)
-        # print("----symbolic check result:")
-        # symbolic_conflicts = symbolic_check(conv)
-        print("----semantic check result:")
-        semantic_conflicts = semantic_check(conv, messages)
-        semantic_count += len(semantic_conflicts)
-        # calculate the accuracy
         total_conflicts += len(gt_conflicts)
-        # symbolic_count += len([u for u in symbolic_conflicts if u in gt_conflicts])
-        correct_count += len([u for u in semantic_conflicts if u in gt_conflicts])
-        # print(f"----symbolic check accuracy: {float(symbolic_count) / float(total_conflicts)}")
-        print(f"----semantic check accuracy: {float(semantic_count) / float(total_conflicts)}")
+        conv_data["count"] = len(gt_conflicts)
+        conv_data["conflicts"] = gt_conflicts
         i += 1
-        print("total_conflicts, semantic_count, correct_count: ", total_conflicts, semantic_count, correct_count)
-    return total_conflicts, semantic_count, correct_count
+        result_data.append(conv_data)
+    return result_data
                    
 def ground_truth(conv):
     enhancing_dict = {}
@@ -58,8 +80,8 @@ def ground_truth(conv):
             assess1 = utter1["Annotation_eval"][person]
             if assess1 == {}:
                 continue
-            utter1_enhancing += [v for v in assess1["Enhancing"] if v != "NA"]
-            utter1_undercutting += [v for v in assess1["Undercutting"] if v != "NA"]
+            utter1_enhancing += [v.strip().lower() for v in assess1["Enhancing"] if v != "NA"]
+            utter1_undercutting += [v.strip().lower() for v in assess1["Undercutting"] if v != "NA"]
         
         for utter2 in conv["Conversation"]:
             utter2_id = utter2["Utterance_id"]
@@ -72,8 +94,8 @@ def ground_truth(conv):
                 assess2 = utter2["Annotation_eval"][person]
                 if assess2 == {}:
                     continue
-                utter2_enhancing += [v for v in assess2["Enhancing"] if v != "NA"]
-                utter2_undercutting += [v for v in assess2["Undercutting"] if v != "NA"]
+                utter2_enhancing += [v.strip().lower() for v in assess2["Enhancing"] if v != "NA"]
+                utter2_undercutting += [v.strip().lower() for v in assess2["Undercutting"] if v != "NA"]
             # check if the two utterance conflict with each other
             conflict_values = [v for v in utter1_enhancing if v in utter2_undercutting]
             if conflict_values != []:
@@ -81,7 +103,7 @@ def ground_truth(conv):
                 print(f"Conflict between utterance {utter1_id} and {utter2_id}, speaker {speaker1_id} and {speaker2_id}")
                 print("Conflict value: ", set(conflict_values))
                 print()
-                rlt.append((utter1_id, utter2_id))
+                rlt.append({"utter1": utter1_id, "utter2": utter2_id, "speaker1": speaker1_id, "speaker2": speaker2_id, "moral_principle": list(set(conflict_values))})
     return rlt
 
 def symbolic_check(conv):
@@ -102,6 +124,9 @@ def symbolic_check(conv):
                 continue
             utter2_enhancing = max(utter2["Enhancing"], key=utter2["Enhancing"].count)
             utter2_undercutting = max(utter2["Undercutting"], key=utter2["Undercutting"].count)
+            # remove any prefixing spaces and to lower cases
+            utter1_enhancing = utter1_enhancing.strip().lower()
+            utter2_undercutting = utter2_undercutting.strip().lower()
             # check if the two utterance conflict with each other with simple symbolic check
             conflict = utter1_enhancing == utter2_undercutting and (utter1_enhancing != "NA" or utter2_undercutting != "NA")
             if conflict:
@@ -132,6 +157,9 @@ def semantic_check(conv, messages):
                 continue
             utter2_enhancing = max(utter2["Enhancing"], key=utter2["Enhancing"].count)
             utter2_undercutting = max(utter2["Undercutting"], key=utter2["Undercutting"].count)
+            # remove any prefixing spaces and to lower cases
+            utter1_enhancing = utter1_enhancing.strip().lower()
+            utter2_undercutting = utter2_undercutting.strip().lower()
             if utter1_enhancing == "NA" or utter2_undercutting == "NA":
                 continue
             # check if the two utterance conflict with each other with semantic equivalence
@@ -204,26 +232,26 @@ def semantic_check(conv, messages):
 #                 print()
      
 if __name__ == "__main__":
-    # benchmark_set = ["gun_violence_annotation_gpt-4.json", "vegan_immigration_annotation_gpt-4.json"]
-    benchmark_set = ["vegan_immigration_annotation_gpt-4.json"]
-    input_file = "gun_violence_annotation_gpt-4.json"
-    statistics = {}
-    
-    conflict_count = 0
-    detected_count= 0
-    correct_count = 0
-    for benchmark in benchmark_set:
-        print("====Evaluating benchmark: ", benchmark)
-        conflict_cnt, detected_cnt, correct_cnt = detect_conflict(benchmark)
-        conflict_count += conflict_cnt
-        detected_count += detected_cnt
-        correct_count += correct_cnt
-        statistics[benchmark] = (conflict_cnt, detected_cnt, correct_cnt, float(correct_cnt) / float(conflict_cnt))
-    
-    print(f"total conflict count: {conflict_count}")
-    print(f"total detected count: {detected_count}")
-    print(f"total correct count: {correct_count}")
-    print(f"----prediction accuracy: {float(correct_count) / float(conflict_count)}")
-    print(f"statistics: {statistics}")
+    # benchmark_set = ["gun_violence_annotation_gpt-4.json", "vegan_immigration_full_annotation_gpt-4.json", "abortion_transgender_full_annotation_gpt-4.json"]
+    # for benchmark in benchmark_set:
+    #     print("====Evaluating benchmark: ", benchmark)
+    #     result_data = ground_truth_detector(benchmark)
+    #     ground_truth_data += result_data
+    # benchmark_set = ["gun_violence_annotation_gpt-4.json"]
+    input_file = "annotated_data.json"
+
+    # generate ground truth data
+    ground_truth_data = ground_truth_detector(input_file)
+
+    with open("ground_truth_data.json", "w") as json_file:
+        json.dump(ground_truth_data, json_file)
+        
+    # statistics = {}
+       
+    # print(f"total conflict count: {conflict_count}")
+    # print(f"total detected count: {detected_count}")
+    # print(f"total correct count: {correct_count}")
+    # print(f"----prediction accuracy: {float(correct_count) / float(conflict_count)}")
+    # print(f"statistics: {statistics}")
     
     # detect_conflict(input_file)
