@@ -216,9 +216,11 @@ def detect_conflict(file_name, check_method):
         print("Speaker count: ", conv["Speaker_count"])
         print("----ground truth check result:")
         gt_conflicts = ground_truth(conv)
+        gt_conflicts = [tuple(sorted(x)) for x in gt_conflicts]
 
         print("----" + check_method + " check result:")
         semantic_conflicts = check_func[check_method](conv, messages)
+        semantic_conflicts = [tuple(sorted(x)) for x in semantic_conflicts]
         print(semantic_conflicts)
         semantic_count += len(semantic_conflicts)
 
