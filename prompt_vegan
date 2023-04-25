@@ -1,0 +1,128 @@
+class Conversation:  
+            def __init__(example): 
+                print(example)     
+                #{'Topic': 'Vegan', 'Conversation': [{'Speaker_id': 0, 'Utterance_id': 0, 'Content': 'Why would chucking paint all over big ben persuade someone like me to give up meat?'}, {'Speaker_id': 1, 'Utterance_id': 1, 'Content': "As you and your viewers probably know we are in a climate an ecological emergency at the moment and so what we are doing is we're asking the government to support farmers and fishing communities in a transition to a plant-based food system because we know that animal agriculture is a leading cause of the climate crisis and so if we transition to a plant-based food system we can free up vast amount of land in the UK."}, {'Speaker_id': 0, 'Utterance_id': 2, 'Content': "Okay look that's all fine, that wasn't my question. My question is why does chucking paint over big ben? Why does desecrating Trafalgar square with red dye, chucking milk around harrods, destroying supermarket shells? How does that persuade me who already likes eating meat? Why are you going to persuade me by being a vandal? Don't get it."}, {'Speaker_id': 1, 'Utterance_id': 3, 'Content': "I think we're we're in an incredibly difficult position at the moment because we've been trying to talk about these things now for a very long time and so we're at a point where we need to escalate protest so we can gain more media attention on the subject."}, {'Speaker_id': 0, 'Utterance_id': 4, 'Content': "I don't know anyone you persuade. \\I haven't heard anyone go. you know what, I was a meat eater and I saw big ben being desecrated this great monument in this country and I thought I know what I'll do. I'm going to go and give up meat and start eating gruel. I haven't heard a single human being say that. Why would they?"}, {'Speaker_id': 1, 'Utterance_id': 5, 'Content': "I think the purpose of protests is not necessarily to win over people. It's to bring these important conversations to the table."}, {'Speaker_id': 0, 'Utterance_id': 6, 'Content': "But we know the conversation. You you're a vegan, right? I'm a meat eater, Why can't we just both live happily in each other's orbit? Why can't you let me just get on with eating meat and you eat your gruel and we're all go home happy."}, {'Speaker_id': 1, 'Utterance_id': 7, 'Content': 'Because we know animal farming and fishing are a leading cause of the climate.'}, {'Speaker_id': 0, 'Utterance_id': 8, 'Content': 'We know having a strictly vegan diet is bad for you as well.'}, {'Speaker_id': 1, 'Utterance_id': 9, 'Content': "Well that's not true."}, {'Speaker_id': 0, 'Utterance_id': 10, 'Content': "True a lot of science says it's bad for you. What do you eat? Do we eat almonds? Should you eat almond milk?"}]}  
+   
+                utter = "Why would chucking paint all over big ben persuade someone like me to give up meat?"    
+                utter_id = "Speaker0_Utter0"     
+                # Is the Speaker0_Utter0 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter0 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "NA"  
+                # Is the Speaker0_Utter0 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter0 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "Disruptive protest methods"   
+                self.utter_Speaker0_Utter0 = Utterance(utter_id, utter)   
+                self.utter_Speaker0_Utter0.add_enhancing(NA())   
+                self.utter_Speaker0_Utter0.add_undercutting(Disruptive_protest_methods())   
+  
+                utter = "As you and your viewers probably know we are in a climate an ecological emergency at the moment and so what we are doing is we're asking the government to support farmers and fishing communities in a transition to a plant-based food system because we know that animal agriculture is a leading cause of the climate crisis and so if we transition to a plant-based food system we can free up vast amount of land in the UK."    
+                utter_id = "Speaker1_Utter1"     
+                # Is the Speaker1_Utter1 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter1 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Environmental protection"  
+                # Is the Speaker1_Utter1 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter1 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "NA"   
+                self.utter_Speaker1_Utter1 = Utterance(utter_id, utter)   
+                self.utter_Speaker1_Utter1.add_enhancing(Environmental_protection())   
+                self.utter_Speaker1_Utter1.add_undercutting(NA())   
+  
+                utter = "Okay look that's all fine, that wasn't my question. My question is why does chucking paint over big ben? Why does desecrating Trafalgar square with red dye, chucking milk around harrods, destroying supermarket shells? How does that persuade me who already likes eating meat? Why are you going to persuade me by being a vandal? Don't get it."    
+                utter_id = "Speaker0_Utter2"     
+                # Is the Speaker0_Utter2 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter2 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Respect for property"  
+                # Is the Speaker0_Utter2 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter2 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "Vandalism for persuasion"   
+                self.utter_Speaker0_Utter2 = Utterance(utter_id, utter)   
+                self.utter_Speaker0_Utter2.add_enhancing(Respect_for_property())   
+                self.utter_Speaker0_Utter2.add_undercutting(Vandalism_for_persuasion())   
+  
+                utter = "I think we're we're in an incredibly difficult position at the moment because we've been trying to talk about these things now for a very long time and so we're at a point where we need to escalate protest so we can gain more media attention on the subject."    
+                utter_id = "Speaker1_Utter3"     
+                # Is the Speaker1_Utter3 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter3 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Escalation for attention"  
+                # Is the Speaker1_Utter3 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter3 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "NA"   
+                self.utter_Speaker1_Utter3 = Utterance(utter_id, utter)   
+                self.utter_Speaker1_Utter3.add_enhancing(Escalation_for_attention())   
+                self.utter_Speaker1_Utter3.add_undercutting(NA())   
+  
+                utter = "I don't know anyone you persuade. \I haven't heard anyone go. you know what, I was a meat eater and I saw big ben being desecrated this great monument in this country and I thought I know what I'll do. I'm going to go and give up meat and start eating gruel. I haven't heard a single human being say that. Why would they?"    
+                utter_id = "Speaker0_Utter4"     
+                # Is the Speaker0_Utter4 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter4 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Personal freedom"  
+                # Is the Speaker0_Utter4 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter4 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "Persuasion through vandalism"   
+                self.utter_Speaker0_Utter4 = Utterance(utter_id, utter)   
+                self.utter_Speaker0_Utter4.add_enhancing(Personal_freedom())   
+                self.utter_Speaker0_Utter4.add_undercutting(Persuasion_through_vandalism())   
+  
+                utter = "I think the purpose of protests is not necessarily to win over people. It's to bring these important conversations to the table."    
+                utter_id = "Speaker1_Utter5"     
+                # Is the Speaker1_Utter5 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter5 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Raising public awareness"  
+                # Is the Speaker1_Utter5 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter5 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "NA"   
+                self.utter_Speaker1_Utter5 = Utterance(utter_id, utter)   
+                self.utter_Speaker1_Utter5.add_enhancing(Raising_public_awareness())   
+                self.utter_Speaker1_Utter5.add_undercutting(NA())   
+  
+                utter = "But we know the conversation. You you're a vegan, right? I'm a meat eater, Why can't we just both live happily in each other's orbit? Why can't you let me just get on with eating meat and you eat your gruel and we're all go home happy."    
+                utter_id = "Speaker0_Utter6"     
+                # Is the Speaker0_Utter6 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter6 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Live and let live"  
+                # Is the Speaker0_Utter6 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter6 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "NA"   
+                self.utter_Speaker0_Utter6 = Utterance(utter_id, utter)   
+                self.utter_Speaker0_Utter6.add_enhancing(Live_and_let_live())   
+                self.utter_Speaker0_Utter6.add_undercutting(NA())   
+  
+                utter = "Because we know animal farming and fishing are a leading cause of the climate."    
+                utter_id = "Speaker1_Utter7"     
+                # Is the Speaker1_Utter7 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter7 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Climate and environment protection"  
+                # Is the Speaker1_Utter7 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter7 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "Environmental harm"   
+                self.utter_Speaker1_Utter7 = Utterance(utter_id, utter)   
+                self.utter_Speaker1_Utter7.add_enhancing(Climate_and_environment_protection())   
+                self.utter_Speaker1_Utter7.add_undercutting(Environmental_harm())   
+  
+                utter = "We know having a strictly vegan diet is bad for you as well."    
+                utter_id = "Speaker0_Utter8"     
+                # Is the Speaker0_Utter8 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter8 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Human health concerns"  
+                # Is the Speaker0_Utter8 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter8 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "Health concerns"   
+                self.utter_Speaker0_Utter8 = Utterance(utter_id, utter)   
+                self.utter_Speaker0_Utter8.add_enhancing(Human_health_concerns())   
+                self.utter_Speaker0_Utter8.add_undercutting(Health_concerns())   
+  
+                utter = "Well that's not true."    
+                utter_id = "Speaker1_Utter9"     
+                # Is the Speaker1_Utter9 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter9 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Vegan diet is healthy"  
+                # Is the Speaker1_Utter9 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker1_Utter9 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "Health misinformation"   
+                self.utter_Speaker1_Utter9 = Utterance(utter_id, utter)   
+                self.utter_Speaker1_Utter9.add_enhancing(Vegan_diet_is_healthy())   
+                self.utter_Speaker1_Utter9.add_undercutting(Health_misinformation())   
+  
+                utter = "True a lot of science says it's bad for you. What do you eat? Do we eat almonds? Should you eat almond milk?"    
+                utter_id = "Speaker0_Utter10"     
+                # Is the Speaker0_Utter10 supporting a certain moral principle or intrinsic value? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter10 is supporting or enhancing or praising. Answer me with a phrase within 4 words. 
+                 enhancing_value = "Health value"  
+                # Is the Speaker0_Utter10 against a certain moral principle or intrinsic value that might be hold by other speakers? Reply me NA if it is not. Otherwise, infer the moral principle or the intrinsic value that Speaker0_Utter10 is opposing or undercutting or attacking. Answer me with a phrase within 4 words. 
+                 undercutting_value = "Vagan diet"   
+                self.utter_Speaker0_Utter10 = Utterance(utter_id, utter)   
+                self.utter_Speaker0_Utter10.add_enhancing(Health_value())   
+                self.utter_Speaker0_Utter10.add_undercutting(Vagan_diet())   
+            def detect_moral_diagreement(Escalation_for_attention, Persuasion_through_vandalism):   
+                # detect_moral_diagreement     
+             value1 = self.utter_Speaker1_Utter3.enhancing_value,     
+            # Escalation_for_attention  
+            value2 = self.utter_Speaker0_Utter4.undercutting_value    
+            # Persuasion_through_vandalism   
+            # semantic_equivalent = semantic_equivalent(value1, value2) 
+            # False  
+
+class Conversation:  
+            def __init__(example): 
+                print(example)     
+                #{'Topic': 'Vegan', 'Conversation': [{'Speaker_id': 10, 'Utterance_id': 0, 'Content': "Animal agriculture has reduced carbon emissions by 20 percent since 1990 65 percent of the land, the arable land, agriculture land in this country is grass. That locks in ninety billion tons of carbon into our soils, right? Animals are an essential part of the actual life cycle. They cannot emit more carbon than they eat. They are part of, they are part... and that's why Natural England and people like the RSPB actually support grazing animals. We're talking about grass-fed livestock here. We're talking about small butchers who have those short supply chains of low fat, uh, low travel distances, supporting the local food economy, which has a big effect"}, {'Speaker_id': 11, 'Utterance_id': 1, 'Content': "We created a documentary called The Land of Hope and Glory, online, which talks all about what happens to animals in the UK. So there's two studies. The first study is a five-year study conducted by the University of Oxford; it's the most comprehensive study that has ever been conducted exploring the relation between the environment..."}, {'Speaker_id': 10, 'Utterance_id': 2, 'Content': 'Is this the one that was run by a vegan?'}, {'Speaker_id': 11, 'Utterance_id': 3, 'Content': "He wasn't vegan when he started, but he was vegan when he finished it because of what he found out. And what he discovered..."}, {'Speaker_id': 12, 'Utterance_id': 4, 'Content': 'You may be, after this conversation, John, as well.'}, {'Speaker_id': 10, 'Utterance_id': 5, 'Content': 'Not very likely.'}, {'Speaker_id': 11, 'Utterance_id': 6, 'Content': "What he discovered is that 83% of the farmland that we use is currently dedicated to animal agriculture and if the world shifted to a plant-based diet, we can reduce the amount of land we need to animal agriculture by 75%. He conducted it and at the end he summarized by saying: the best thing that we can do for our planet is to live a vegan lifestyle. Now the second study was most comprehensive study ever conducted exploring the relationship between food and the environment. And it said that in this country, in the UK, we have to reduce our beef, our lamb, and our pig consumption by 90 percent, and our dairy and poultry and egg consumption by 60 percent, to not hit that 1.5 degree threshold rise in twelve years' time."}]}  
+ 

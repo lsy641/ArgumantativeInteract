@@ -5,7 +5,7 @@ import time
 openai.organization = "org-gcDzLqviJ8Ot15L4nFeIgR5L"
 openai.api_key = open("api_key", "r").read()
 
-RawInputName = "vegan_immigration_"
+RawInputName = "abortion_transgender_"
 AutoAnnatationOutputname = RawInputName+"annotation_wo_human_"
 
 
